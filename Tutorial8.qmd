@@ -292,7 +292,6 @@ head(movieReviewDfm_mydict, 6)
 ```
 
 In addition to count frequency, we can also assign values/weights to words, to indicate how strongly positive/negative each word is. 
-
 For example, we first construct a fake corpus
 
 ```{r}
