@@ -16,6 +16,7 @@ Let's load up our packages. There's one change from prior tutorials here: we're 
 #install.packages("quanteda")
 #install.packages("quanteda.textmodels")
 
+
 # load libraries
 library(tidytext)
 library(plyr)
@@ -189,7 +190,9 @@ dfmTrainSmall <- dfm_trim(dfmTrainSmall, min_docfreq = 20, min_termfreq = 20)
 dim(dfmTrainSmall)
 
 # run model
-polarity_SVM <- textmodel_svm(dfmTrainSmall, docvars(dfmTrainSmall, "polarity"))
+#polarity_SVM <- textmodel_svm(dfmTrainSmall, docvars(dfmTrainSmall, "polarity"))
+polarity_SVM <- svm(dfmTrainSmall, docvars(dfmTrainSmall, "polarity"),
+                    kernel="linear")
 ```
 
 
@@ -210,14 +213,13 @@ confusionMatrix(confusion, mode = "everything")
 
 A little bit worse, but recall that we are using *a lot fewer* features than we had previously. Note also that we've done no tuning of the `svm` classifier. 
 
-We can also check the most positive and negative features to see whether the results make sense.
+We can check the most positive and negative features if we build the model using textmodel_svm(). However e1071 doesn't have this output. 
 
 ```{r}
-svmCoefs <- as.data.frame(t(coefficients(polarity_SVM)))
-svmCoefs <- svmCoefs %>% arrange(V1)
-head(svmCoefs, 20)
-tail(svmCoefs, 20)
-
+#svmCoefs <- as.data.frame(t(coefficients(polarity_SVM)))
+#svmCoefs <- svmCoefs %>% arrange(V1)
+#head(svmCoefs, 20)
+#tail(svmCoefs, 20)
 ```
 These generally look sensible, though there's definitely something weird going on with both "positive" for negative reviews.
 
