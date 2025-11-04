@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.5.57">
+<meta name="generator" content="quarto-1.7.32">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Tutorial_10 – DACSS758 Text as Data Fall 2024</title>
+<title>Tutorial_10 – DACSS758 Text as Data Fall 2025</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -21,8 +21,9 @@ ul.task-list li input[type="checkbox"] {
   vertical-align: middle;
 }
 /* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
 pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
 pre > code.sourceCode > span:empty { height: 1.2em; }
 .sourceCode { overflow: visible; }
 code.sourceCode > span { color: inherit; text-decoration: inherit; }
@@ -33,7 +34,7 @@ div.sourceCode { overflow: auto; }
 }
 @media print {
 pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
 }
 pre.numberSource code
   { counter-reset: source-line 0; }
@@ -64,15 +65,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-37eea08aefeeee20ff55810ff984fec1.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-c1fac2584b48ed01fb6e278e36375074.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -134,7 +136,7 @@ window.Quarto = {
 <link rel="stylesheet" href="styles.css">
 </head>
 
-<body class="nav-fixed">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -142,7 +144,7 @@ window.Quarto = {
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
     <a class="navbar-brand" href="./index.html">
-    <span class="navbar-title">DACSS758 Text as Data Fall 2024</span>
+    <span class="navbar-title">DACSS758 Text as Data Fall 2025</span>
     </a>
   </div>
             <div id="quarto-search" class="" title="Search"></div>
@@ -515,10 +517,10 @@ Note
 <span id="cb30-7"><a href="#cb30-7" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb30-8"><a href="#cb30-8" aria-hidden="true" tabindex="-1"></a>varper</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code> [1] 4.757368e-12 5.562061e-03 7.625786e-03 2.237929e-02 2.446568e-02
- [6] 3.140732e-02 3.334774e-02 3.149158e-02 3.973052e-02 3.971028e-02
-[11] 3.869794e-02 4.446518e-02 4.170454e-02 4.770083e-02 4.848910e-02
-[16] 5.173870e-02</code></pre>
+<pre><code> [1] 4.308782e-13 1.361237e-02 1.650303e-02 2.111114e-02 2.253012e-02
+ [6] 2.760744e-02 3.286211e-02 3.438699e-02 3.588212e-02 3.703978e-02
+[11] 4.224585e-02 4.249846e-02 4.913679e-02 4.682225e-02 5.279371e-02
+[16] 5.519676e-02</code></pre>
 </div>
 <div class="sourceCode cell-code" id="cb32"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb32-1"><a href="#cb32-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="dv">1</span><span class="sc">:</span>k, varper, <span class="at">xlab =</span> <span class="st">"# of clusters"</span>, <span class="at">ylab =</span> <span class="st">"explained variance"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
@@ -861,7 +863,7 @@ Vocabulary:
     reset_c_local: function () 
     run_iter_doc: function (update_topics = TRUE, ptr = private$ptr) 
     run_iter_word: function (update_topics = TRUE, ptr = private$ptr) 
-    seeds: 877721554.682558 1522846961.08174
+    seeds: 1638626943.97391 1905171874.72567
     set_c_all: function (x) 
     set_internal_matrix_formats: function (sparse = NULL, dense = NULL) 
     topic_word_distribution_with_prior: function () 
@@ -882,17 +884,13 @@ Vocabulary:
 <span id="cb52-3"><a href="#cb52-3" aria-hidden="true" tabindex="-1"></a>  lda_model<span class="sc">$</span><span class="fu">fit_transform</span>(<span class="at">x =</span> dtm, <span class="at">n_iter =</span> <span class="dv">1000</span>,</span>
 <span id="cb52-4"><a href="#cb52-4" aria-hidden="true" tabindex="-1"></a>                          <span class="at">convergence_tol =</span> <span class="fl">0.001</span>, <span class="at">n_check_convergence =</span> <span class="dv">25</span>,</span>
 <span id="cb52-5"><a href="#cb52-5" aria-hidden="true" tabindex="-1"></a>                          <span class="at">progressbar =</span> <span class="cn">FALSE</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>INFO  [01:55:46.229] early stopping at 225 iteration
-INFO  [01:55:50.903] early stopping at 50 iteration</code></pre>
-</div>
 </div>
 <p>The <code>doc_topic_distr</code> object is a matrix where each row is a document, each column is a topic, and the cell entry is the proportion of the document estimated to be of the topic. That is, each row is the topic attention distribution for a document.</p>
 <p>For example, here’s the topic distribution for the very first document:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(doc_topic_distr[<span class="dv">1</span>, ], <span class="at">xlab =</span> <span class="st">"topic"</span>,</span>
-<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a>        <span class="at">ylab =</span> <span class="st">"proportion"</span>, <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>),</span>
-<span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a>        <span class="at">names.arg =</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">ncol</span>(doc_topic_distr))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb53"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb53-1"><a href="#cb53-1" aria-hidden="true" tabindex="-1"></a><span class="fu">barplot</span>(doc_topic_distr[<span class="dv">1</span>, ], <span class="at">xlab =</span> <span class="st">"topic"</span>,</span>
+<span id="cb53-2"><a href="#cb53-2" aria-hidden="true" tabindex="-1"></a>        <span class="at">ylab =</span> <span class="st">"proportion"</span>, <span class="at">ylim =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>),</span>
+<span id="cb53-3"><a href="#cb53-3" aria-hidden="true" tabindex="-1"></a>        <span class="at">names.arg =</span> <span class="dv">1</span><span class="sc">:</span><span class="fu">ncol</span>(doc_topic_distr))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -906,40 +904,40 @@ INFO  [01:55:50.903] early stopping at 50 iteration</code></pre>
 <h3 class="anchored" data-anchor-id="describing-topics-top-words">Describing Topics: Top Words</h3>
 <p>We can also use <code>$get_top_words</code> as a method to get the top words for each topic.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb55"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb55-1"><a href="#cb55-1" aria-hidden="true" tabindex="-1"></a><span class="co"># get top n words for topics 1, 5, and 10</span></span>
-<span id="cb55-2"><a href="#cb55-2" aria-hidden="true" tabindex="-1"></a>lda_model<span class="sc">$</span><span class="fu">get_top_words</span>(<span class="at">n =</span> <span class="dv">10</span>, <span class="at">topic_number =</span> <span class="fu">c</span>(<span class="dv">1</span>L, <span class="dv">5</span>L, <span class="dv">10</span>L),</span>
-<span id="cb55-3"><a href="#cb55-3" aria-hidden="true" tabindex="-1"></a>                        <span class="at">lambda =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb54"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb54-1"><a href="#cb54-1" aria-hidden="true" tabindex="-1"></a><span class="co"># get top n words for topics 1, 5, and 10</span></span>
+<span id="cb54-2"><a href="#cb54-2" aria-hidden="true" tabindex="-1"></a>lda_model<span class="sc">$</span><span class="fu">get_top_words</span>(<span class="at">n =</span> <span class="dv">10</span>, <span class="at">topic_number =</span> <span class="fu">c</span>(<span class="dv">1</span>L, <span class="dv">5</span>L, <span class="dv">10</span>L),</span>
+<span id="cb54-3"><a href="#cb54-3" aria-hidden="true" tabindex="-1"></a>                        <span class="at">lambda =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>      [,1]       [,2]       [,3]     
- [1,] "did"      "horror"   "life"   
- [2,] "funny"    "man"      "love"   
- [3,] "i'm"      "scene"    "between"
- [4,] "know"     "there's"  "these"  
- [5,] "actors"   "little"   "those"  
- [6,] "watching" "scenes"   "seems"  
- [7,] "say"      "pretty"   "father" 
- [8,] "ever"     "head"     "work"   
- [9,] "didn't"   "house"    "always" 
-[10,] "films"    "director" "where"  </code></pre>
+<pre><code>      [,1]       [,2]       [,3]         
+ [1,] "horror"   "family"   "films"      
+ [2,] "little"   "old"      "version"    
+ [3,] "actually" "man"      "play"       
+ [4,] "films"    "john"     "director"   
+ [5,] "man"      "life"     "best"       
+ [6,] "scene"    "new"      "role"       
+ [7,] "effects"  "children" "star"       
+ [8,] "low"      "little"   "performance"
+ [9,] "special"  "house"    "quite"      
+[10,] "action"   "young"    "excellent"  </code></pre>
 </div>
 </div>
 <p>Also top-words could be stored by “relevance” which also takes into account frequency of word in the corpus (0 &lt; lambda &lt; 1).</p>
 <p>The creator recommends setting lambda to be between 0.2 and 0.4. Here’s the difference compared to a lambda of 1:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb57"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb57-1"><a href="#cb57-1" aria-hidden="true" tabindex="-1"></a>lda_model<span class="sc">$</span><span class="fu">get_top_words</span>(<span class="at">n =</span> <span class="dv">10</span>, <span class="at">topic_number =</span> <span class="fu">c</span>(<span class="dv">1</span>L, <span class="dv">5</span>L, <span class="dv">10</span>L),</span>
-<span id="cb57-2"><a href="#cb57-2" aria-hidden="true" tabindex="-1"></a>                        <span class="at">lambda =</span> <span class="fl">0.2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb56"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb56-1"><a href="#cb56-1" aria-hidden="true" tabindex="-1"></a>lda_model<span class="sc">$</span><span class="fu">get_top_words</span>(<span class="at">n =</span> <span class="dv">10</span>, <span class="at">topic_number =</span> <span class="fu">c</span>(<span class="dv">1</span>L, <span class="dv">5</span>L, <span class="dv">10</span>L),</span>
+<span id="cb56-2"><a href="#cb56-2" aria-hidden="true" tabindex="-1"></a>                        <span class="at">lambda =</span> <span class="fl">0.2</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>      [,1]       [,2]       [,3]           
- [1,] "zombie"   "horror"   "relationship" 
- [2,] "funny"    "gore"     "relationships"
- [3,] "zombies"  "starts"   "arthur"       
- [4,] "reviews"  "killer"   "childhood"    
- [5,] "reminded" "kills"    "moral"        
- [6,] "rubbish"  "car"      "de"           
- [7,] "utter"    "police"   "office"       
- [8,] "laughing" "head"     "loving"       
- [9,] "laugh"    "thriller" "class"        
-[10,] "i'd"      "slasher"  "anna"         </code></pre>
+<pre><code>      [,1]        [,2]        [,3]        
+ [1,] "horror"    "match"     "jane"      
+ [2,] "zombie"    "novel"     "version"   
+ [3,] "gore"      "king"      "mary"      
+ [4,] "slasher"   "children"  "musical"   
+ [5,] "car"       "frank"     "caine"     
+ [6,] "cat"       "arthur"    "davis"     
+ [7,] "monster"   "led"       "supporting"
+ [8,] "zombies"   "edge"      "tarzan"    
+ [9,] "effects"   "portrayal" "versions"  
+[10,] "invisible" "religious" "star"      </code></pre>
 </div>
 </div>
 </section>
@@ -947,27 +945,24 @@ INFO  [01:55:50.903] early stopping at 50 iteration</code></pre>
 <h3 class="anchored" data-anchor-id="apply-learned-model-to-new-data">Apply Learned Model to New Data</h3>
 <p>One thing we occasionally may be interested in doing is understanding how well our model fits the data. Therefore, we can rely on our supervised learning insights and apply the estimated model to new data. From that, we’ll obtain a document-topic distribution that we can:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a><span class="co"># creating iterator</span></span>
-<span id="cb59-2"><a href="#cb59-2" aria-hidden="true" tabindex="-1"></a>it2 <span class="ot">&lt;-</span> <span class="fu">itoken</span>(movie_review<span class="sc">$</span>review[<span class="dv">3001</span><span class="sc">:</span><span class="dv">5000</span>], tolower,</span>
-<span id="cb59-3"><a href="#cb59-3" aria-hidden="true" tabindex="-1"></a>              word_tokenizer, <span class="at">ids =</span> movie_review<span class="sc">$</span>id[<span class="dv">3001</span><span class="sc">:</span><span class="dv">5000</span>])</span>
-<span id="cb59-4"><a href="#cb59-4" aria-hidden="true" tabindex="-1"></a><span class="co"># creating new DFM</span></span>
-<span id="cb59-5"><a href="#cb59-5" aria-hidden="true" tabindex="-1"></a>new_dtm <span class="ot">&lt;-</span> <span class="fu">create_dtm</span>(it2, vectorizer, <span class="at">type =</span> <span class="st">"dgTMatrix"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb58"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb58-1"><a href="#cb58-1" aria-hidden="true" tabindex="-1"></a><span class="co"># creating iterator</span></span>
+<span id="cb58-2"><a href="#cb58-2" aria-hidden="true" tabindex="-1"></a>it2 <span class="ot">&lt;-</span> <span class="fu">itoken</span>(movie_review<span class="sc">$</span>review[<span class="dv">3001</span><span class="sc">:</span><span class="dv">5000</span>], tolower,</span>
+<span id="cb58-3"><a href="#cb58-3" aria-hidden="true" tabindex="-1"></a>              word_tokenizer, <span class="at">ids =</span> movie_review<span class="sc">$</span>id[<span class="dv">3001</span><span class="sc">:</span><span class="dv">5000</span>])</span>
+<span id="cb58-4"><a href="#cb58-4" aria-hidden="true" tabindex="-1"></a><span class="co"># creating new DFM</span></span>
+<span id="cb58-5"><a href="#cb58-5" aria-hidden="true" tabindex="-1"></a>new_dtm <span class="ot">&lt;-</span> <span class="fu">create_dtm</span>(it2, vectorizer, <span class="at">type =</span> <span class="st">"dgTMatrix"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>We will have to use <code>$transform</code> instead of <code>$fit_transform</code> since we don’t have to fit the new model (we are attempting to predict the last 2000).</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a>new_doc_topiic_distr <span class="ot">=</span> lda_model<span class="sc">$</span><span class="fu">transform</span>(new_dtm)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>INFO  [01:55:56.388] early stopping at 30 iteration</code></pre>
-</div>
+<div class="sourceCode cell-code" id="cb59"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb59-1"><a href="#cb59-1" aria-hidden="true" tabindex="-1"></a>new_doc_topiic_distr <span class="ot">=</span> lda_model<span class="sc">$</span><span class="fu">transform</span>(new_dtm)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <p>One widely used approach for model hyper-parameter tuning is validation of per-word <em>perplexity</em> on hold-out set. This is quite easy with <code>text2vec</code>.</p>
 <p>Remember that we’ve fit the model on only the first 3000 reviews and predicted the last 2000. Therefore, we will calculate the held-out perplexity on these 2000 docs as follows:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="co"># calculates perplexity between new and old topic word distribution</span></span>
-<span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a><span class="fu">perplexity</span>(new_dtm, <span class="at">topic_word_distribution =</span> lda_model<span class="sc">$</span>topic_word_distribution,</span>
-<span id="cb62-3"><a href="#cb62-3" aria-hidden="true" tabindex="-1"></a>           <span class="at">doc_topic_distribution =</span> new_doc_topiic_distr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb60"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb60-1"><a href="#cb60-1" aria-hidden="true" tabindex="-1"></a><span class="co"># calculates perplexity between new and old topic word distribution</span></span>
+<span id="cb60-2"><a href="#cb60-2" aria-hidden="true" tabindex="-1"></a><span class="fu">perplexity</span>(new_dtm, <span class="at">topic_word_distribution =</span> lda_model<span class="sc">$</span>topic_word_distribution,</span>
+<span id="cb60-3"><a href="#cb60-3" aria-hidden="true" tabindex="-1"></a>           <span class="at">doc_topic_distribution =</span> new_doc_topiic_distr)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>[1] 2312.273</code></pre>
+<pre><code>[1] 2292.065</code></pre>
 </div>
 </div>
 <p>The lower perplexity the better. We can imagine adapting our hyperparameters and re-estimating across perplexity to try to evaluate our model performance. Still, perplexity as a measure has it’s own concerns: it doesn’t directly provide insight on whether or not the topics make sense, and tends to prefer bigger models than smaller ones.</p>
@@ -977,12 +972,12 @@ INFO  [01:55:50.903] early stopping at 50 iteration</code></pre>
 <p>Normally it would take one line to run the visualization for the LDA model, using the method <code>$plot()</code>.</p>
 <p>Let’s download and load in the required library the visuals depend on:</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb64"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb64-1"><a href="#cb64-1" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages('LDAvis')</span></span>
-<span id="cb64-2"><a href="#cb64-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(LDAvis)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb62"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb62-1"><a href="#cb62-1" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages('LDAvis')</span></span>
+<span id="cb62-2"><a href="#cb62-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(LDAvis)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb65"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="co"># creating plot</span></span>
-<span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a>lda_model<span class="sc">$</span><span class="fu">plot</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb63"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb63-1"><a href="#cb63-1" aria-hidden="true" tabindex="-1"></a><span class="co"># creating plot</span></span>
+<span id="cb63-2"><a href="#cb63-2" aria-hidden="true" tabindex="-1"></a>lda_model<span class="sc">$</span><span class="fu">plot</span>()</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>Loading required namespace: servr</code></pre>
 </div>
@@ -997,15 +992,15 @@ INFO  [01:55:50.903] early stopping at 50 iteration</code></pre>
 <h3 class="anchored" data-anchor-id="front-end-matters-1">Front-end Matters</h3>
 <p>STM has really fantastic documentation and a host of related packages for added functionality. You can find the STM website <a href="https://www.structuraltopicmodel.com/">here</a>. Let’s load the package. Note that this will almost certainly take a few minutes given all of the dependencies.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb67"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages("stm")</span></span>
-<span id="cb67-2"><a href="#cb67-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stm)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb65"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb65-1"><a href="#cb65-1" aria-hidden="true" tabindex="-1"></a><span class="co">#install.packages("stm")</span></span>
+<span id="cb65-2"><a href="#cb65-2" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(stm)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
 <pre><code>stm v1.3.7 successfully loaded. See ?stm for help. 
  Papers, resources, and other materials at structuraltopicmodel.com</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb69"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb69-1"><a href="#cb69-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(quanteda)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb67"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb67-1"><a href="#cb67-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(quanteda)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stderr">
-<pre><code>Package version: 4.1.0
+<pre><code>Package version: 4.3.1
 Unicode version: 14.0
 ICU version: 71.1</code></pre>
 </div>
@@ -1035,7 +1030,7 @@ Attaching package: 'quanteda'</code></pre>
 <h3 class="anchored" data-anchor-id="creating-the-dfm">Creating the DFM</h3>
 <p>We’ll continue to use the movie reviews dataset. Now, we’ll leverage the <code>sentiment</code> variable included in the dataset as a covariate in our estimates of topical prevalence; that is, we expect some topics to be more prevalent in positive reviews as opposed to negative reviews, and vice versa. The variable is coded [0,1], with 0 indicating a negative review and 1 indicating a positive review.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb76"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb76-1"><a href="#cb76-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(movie_review<span class="sc">$</span>sentiment)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb74"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb74-1"><a href="#cb74-1" aria-hidden="true" tabindex="-1"></a><span class="fu">table</span>(movie_review<span class="sc">$</span>sentiment)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
    0    1 
@@ -1044,13 +1039,13 @@ Attaching package: 'quanteda'</code></pre>
 </div>
 <p>STM works differently than the <code>text2vec</code>, so we’ll need to have our data in a different format now.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb78"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb78-1"><a href="#cb78-1" aria-hidden="true" tabindex="-1"></a>myTokens <span class="ot">&lt;-</span> <span class="fu">tokens</span>(movie_review<span class="sc">$</span>review,</span>
-<span id="cb78-2"><a href="#cb78-2" aria-hidden="true" tabindex="-1"></a>                   <span class="at">remove_punct =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
-<span id="cb78-3"><a href="#cb78-3" aria-hidden="true" tabindex="-1"></a>             <span class="fu">tokens_remove</span>(<span class="fu">stopwords</span>(<span class="st">"en"</span>))</span>
-<span id="cb78-4"><a href="#cb78-4" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb78-5"><a href="#cb78-5" aria-hidden="true" tabindex="-1"></a>myDfm <span class="ot">&lt;-</span> <span class="fu">dfm</span>(myTokens, <span class="at">tolower =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb78-6"><a href="#cb78-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb78-7"><a href="#cb78-7" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(myDfm)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb76"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb76-1"><a href="#cb76-1" aria-hidden="true" tabindex="-1"></a>myTokens <span class="ot">&lt;-</span> <span class="fu">tokens</span>(movie_review<span class="sc">$</span>review,</span>
+<span id="cb76-2"><a href="#cb76-2" aria-hidden="true" tabindex="-1"></a>                   <span class="at">remove_punct =</span> <span class="cn">TRUE</span>) <span class="sc">%&gt;%</span></span>
+<span id="cb76-3"><a href="#cb76-3" aria-hidden="true" tabindex="-1"></a>             <span class="fu">tokens_remove</span>(<span class="fu">stopwords</span>(<span class="st">"en"</span>))</span>
+<span id="cb76-4"><a href="#cb76-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb76-5"><a href="#cb76-5" aria-hidden="true" tabindex="-1"></a>myDfm <span class="ot">&lt;-</span> <span class="fu">dfm</span>(myTokens, <span class="at">tolower =</span> <span class="cn">TRUE</span>)</span>
+<span id="cb76-6"><a href="#cb76-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb76-7"><a href="#cb76-7" aria-hidden="true" tabindex="-1"></a><span class="fu">dim</span>(myDfm)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1]  5000 46795</code></pre>
 </div>
@@ -1060,13 +1055,13 @@ Attaching package: 'quanteda'</code></pre>
 <h3 class="anchored" data-anchor-id="correlated-topic-model">Correlated Topic Model</h3>
 <p>Now that we have our corpus, we can prep for a structural topic model that incorporates covariates. Recall, however, that the STM <code>without covariates</code> reduces to a very fast implementation of Correlated Topic Models (i.e., a version of the vanilla LDA model but where the topic proportions can be positively correlated with one another).</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb80"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb80-1"><a href="#cb80-1" aria-hidden="true" tabindex="-1"></a>cor_topic_model <span class="ot">&lt;-</span> <span class="fu">stm</span>(myDfm, <span class="at">K =</span> <span class="dv">5</span>,</span>
-<span id="cb80-2"><a href="#cb80-2" aria-hidden="true" tabindex="-1"></a>                       <span class="at">verbose =</span> <span class="cn">FALSE</span>, <span class="at">init.type =</span> <span class="st">"Spectral"</span>)</span>
-<span id="cb80-3"><a href="#cb80-3" aria-hidden="true" tabindex="-1"></a>cor_topic_model</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb78"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb78-1"><a href="#cb78-1" aria-hidden="true" tabindex="-1"></a>cor_topic_model <span class="ot">&lt;-</span> <span class="fu">stm</span>(myDfm, <span class="at">K =</span> <span class="dv">5</span>,</span>
+<span id="cb78-2"><a href="#cb78-2" aria-hidden="true" tabindex="-1"></a>                       <span class="at">verbose =</span> <span class="cn">FALSE</span>, <span class="at">init.type =</span> <span class="st">"Spectral"</span>)</span>
+<span id="cb78-3"><a href="#cb78-3" aria-hidden="true" tabindex="-1"></a>cor_topic_model</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>A topic model with 5 topics, 5000 documents and a 46795 word dictionary.</code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb82"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb82-1"><a href="#cb82-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(cor_topic_model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb80"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb80-1"><a href="#cb80-1" aria-hidden="true" tabindex="-1"></a><span class="fu">summary</span>(cor_topic_model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>A topic model with 5 topics, 5000 documents and a 46795 word dictionary.</code></pre>
 </div>
@@ -1074,17 +1069,17 @@ Attaching package: 'quanteda'</code></pre>
 <pre><code>Topic 1 Top Words:
      Highest Prob: film, one, horror, just, even, like, bad 
      FREX: slasher, zombie, zombies, scarecrows, halloween, kornbluth, fay 
-     Lift: babban, boogey, boreanaz, btk, cheapo, copycat, dornwinkle 
+     Lift: antichrist, armand, babban, bale, beane, blindly, bondarchuk 
      Score: zombie, slasher, horror, zombies, kornbluth, scarecrow, scarecrows 
 Topic 2 Top Words:
      Highest Prob: &gt;, &lt;, br, film, one, movie, like 
      FREX: &gt;, &lt;, br, zizek, miya, |, aztec 
-     Lift: 041, 1-2, 1-to-10-star, 1.0, 10-minute, 10-second, 102 
+     Lift: |, 041, 1-2, 1-to-10-star, 1.0, 10-minute, 10-second 
      Score: &gt;, &lt;, br, miya, zizek, slugs, oshii 
 Topic 3 Top Words:
      Highest Prob: film, one, story, life, films, also, love 
      FREX: bettie, mathieu, sidney, vargas, macarthur, chavez, israel 
-     Lift: 1918, 1945, anna's, antwone, beau, becker, belen 
+     Lift: antwone, _by, #183, 03, 05, 06, 08 
      Score: bettie, film, mathieu, macarthur, chavez, vargas, guinness 
 Topic 4 Top Words:
      Highest Prob: one, show, best, good, also, film, man 
@@ -1094,28 +1089,28 @@ Topic 4 Top Words:
 Topic 5 Top Words:
      Highest Prob: movie, like, just, one, good, film, really 
      FREX: movie, watched, movies, liked, funny, kids, loved 
-     Lift: #spoilers, affiliated, african-influenced, ai, airlift, alvin's, ammo 
+     Lift: _____, ______, _real_, _tried, @ers, @k, #spoilers 
      Score: movie, bad, stupid, movies, crap, funny, think </code></pre>
 </div>
 </div>
 <p>Once we’ve estimated the model, we’ll want to take a look at the topics. Importantly, we don’t get nice, neat topic names. What we do have are the words that are most frequent, probable, or that otherwise characterize a topic. STM provides handy functionality to extract those words with the <code>labelTopics()</code> function.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb85"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb85-1"><a href="#cb85-1" aria-hidden="true" tabindex="-1"></a><span class="fu">labelTopics</span>(cor_topic_model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb83"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb83-1"><a href="#cb83-1" aria-hidden="true" tabindex="-1"></a><span class="fu">labelTopics</span>(cor_topic_model)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Topic 1 Top Words:
      Highest Prob: film, one, horror, just, even, like, bad 
      FREX: slasher, zombie, zombies, scarecrows, halloween, kornbluth, fay 
-     Lift: babban, boogey, boreanaz, btk, cheapo, copycat, dornwinkle 
+     Lift: antichrist, armand, babban, bale, beane, blindly, bondarchuk 
      Score: zombie, slasher, horror, zombies, kornbluth, scarecrow, scarecrows 
 Topic 2 Top Words:
      Highest Prob: &gt;, &lt;, br, film, one, movie, like 
      FREX: &gt;, &lt;, br, zizek, miya, |, aztec 
-     Lift: 041, 1-2, 1-to-10-star, 1.0, 10-minute, 10-second, 102 
+     Lift: |, 041, 1-2, 1-to-10-star, 1.0, 10-minute, 10-second 
      Score: &gt;, &lt;, br, miya, zizek, slugs, oshii 
 Topic 3 Top Words:
      Highest Prob: film, one, story, life, films, also, love 
      FREX: bettie, mathieu, sidney, vargas, macarthur, chavez, israel 
-     Lift: 1918, 1945, anna's, antwone, beau, becker, belen 
+     Lift: antwone, _by, #183, 03, 05, 06, 08 
      Score: bettie, film, mathieu, macarthur, chavez, vargas, guinness 
 Topic 4 Top Words:
      Highest Prob: one, show, best, good, also, film, man 
@@ -1125,16 +1120,16 @@ Topic 4 Top Words:
 Topic 5 Top Words:
      Highest Prob: movie, like, just, one, good, film, really 
      FREX: movie, watched, movies, liked, funny, kids, loved 
-     Lift: #spoilers, affiliated, african-influenced, ai, airlift, alvin's, ammo 
+     Lift: _____, ______, _real_, _tried, @ers, @k, #spoilers 
      Score: movie, bad, stupid, movies, crap, funny, think </code></pre>
 </div>
 </div>
 <p>We can also look at the top documents associated with each topic using <code>findThoughts()</code>. Here, we’ll look at the top document (<code>n=1</code>) for each of the 5 topics (<code>topics = c(1:5)</code>).</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb87"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb87-1"><a href="#cb87-1" aria-hidden="true" tabindex="-1"></a><span class="fu">findThoughts</span>(cor_topic_model,</span>
-<span id="cb87-2"><a href="#cb87-2" aria-hidden="true" tabindex="-1"></a>             <span class="at">texts =</span> movie_review<span class="sc">$</span>review,</span>
-<span id="cb87-3"><a href="#cb87-3" aria-hidden="true" tabindex="-1"></a>             <span class="at">topics =</span> <span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>),</span>
-<span id="cb87-4"><a href="#cb87-4" aria-hidden="true" tabindex="-1"></a>             <span class="at">n =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb85"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb85-1"><a href="#cb85-1" aria-hidden="true" tabindex="-1"></a><span class="fu">findThoughts</span>(cor_topic_model,</span>
+<span id="cb85-2"><a href="#cb85-2" aria-hidden="true" tabindex="-1"></a>             <span class="at">texts =</span> movie_review<span class="sc">$</span>review,</span>
+<span id="cb85-3"><a href="#cb85-3" aria-hidden="true" tabindex="-1"></a>             <span class="at">topics =</span> <span class="fu">c</span>(<span class="dv">1</span><span class="sc">:</span><span class="dv">5</span>),</span>
+<span id="cb85-4"><a href="#cb85-4" aria-hidden="true" tabindex="-1"></a>             <span class="at">n =</span> <span class="dv">1</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>
  Topic 1: 
@@ -1154,17 +1149,17 @@ Topic 5 Top Words:
 <h3 class="anchored" data-anchor-id="structural-topic-model-1">Structural Topic model</h3>
 <p>Let’s go ahead and estimate our structural topic model now. We’ll incorporate the <code>sentiment</code> variable as a predictor on prevalence.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb89"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb89-1"><a href="#cb89-1" aria-hidden="true" tabindex="-1"></a><span class="co"># choose our number of topics</span></span>
-<span id="cb89-2"><a href="#cb89-2" aria-hidden="true" tabindex="-1"></a>k <span class="ot">&lt;-</span> <span class="dv">5</span></span>
-<span id="cb89-3"><a href="#cb89-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb89-4"><a href="#cb89-4" aria-hidden="true" tabindex="-1"></a><span class="co"># specify model</span></span>
-<span id="cb89-5"><a href="#cb89-5" aria-hidden="true" tabindex="-1"></a>myModel <span class="ot">&lt;-</span> <span class="fu">stm</span>(myDfm,</span>
-<span id="cb89-6"><a href="#cb89-6" aria-hidden="true" tabindex="-1"></a>               <span class="at">K =</span> k,</span>
-<span id="cb89-7"><a href="#cb89-7" aria-hidden="true" tabindex="-1"></a>               <span class="at">prevalence =</span> <span class="sc">~</span> sentiment,</span>
-<span id="cb89-8"><a href="#cb89-8" aria-hidden="true" tabindex="-1"></a>               <span class="at">data =</span> movie_review,</span>
-<span id="cb89-9"><a href="#cb89-9" aria-hidden="true" tabindex="-1"></a>               <span class="at">max.em.its =</span> <span class="dv">1000</span>,</span>
-<span id="cb89-10"><a href="#cb89-10" aria-hidden="true" tabindex="-1"></a>               <span class="at">seed =</span> <span class="dv">1234</span>,</span>
-<span id="cb89-11"><a href="#cb89-11" aria-hidden="true" tabindex="-1"></a>               <span class="at">init.type =</span> <span class="st">"Spectral"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb87"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb87-1"><a href="#cb87-1" aria-hidden="true" tabindex="-1"></a><span class="co"># choose our number of topics</span></span>
+<span id="cb87-2"><a href="#cb87-2" aria-hidden="true" tabindex="-1"></a>k <span class="ot">&lt;-</span> <span class="dv">5</span></span>
+<span id="cb87-3"><a href="#cb87-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb87-4"><a href="#cb87-4" aria-hidden="true" tabindex="-1"></a><span class="co"># specify model</span></span>
+<span id="cb87-5"><a href="#cb87-5" aria-hidden="true" tabindex="-1"></a>myModel <span class="ot">&lt;-</span> <span class="fu">stm</span>(myDfm,</span>
+<span id="cb87-6"><a href="#cb87-6" aria-hidden="true" tabindex="-1"></a>               <span class="at">K =</span> k,</span>
+<span id="cb87-7"><a href="#cb87-7" aria-hidden="true" tabindex="-1"></a>               <span class="at">prevalence =</span> <span class="sc">~</span> sentiment,</span>
+<span id="cb87-8"><a href="#cb87-8" aria-hidden="true" tabindex="-1"></a>               <span class="at">data =</span> movie_review,</span>
+<span id="cb87-9"><a href="#cb87-9" aria-hidden="true" tabindex="-1"></a>               <span class="at">max.em.its =</span> <span class="dv">1000</span>,</span>
+<span id="cb87-10"><a href="#cb87-10" aria-hidden="true" tabindex="-1"></a>               <span class="at">seed =</span> <span class="dv">1234</span>,</span>
+<span id="cb87-11"><a href="#cb87-11" aria-hidden="true" tabindex="-1"></a>               <span class="at">init.type =</span> <span class="st">"Spectral"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Beginning Spectral Initialization 
      Calculating the gram matrix...
@@ -1175,23 +1170,23 @@ Topic 5 Top Words:
     ....................................................................................................
 Initialization complete.
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 1 (approx. per word bound = -8.600) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 2 (approx. per word bound = -8.036, relative change = 6.567e-02) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 3 (approx. per word bound = -8.001, relative change = 4.337e-03) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 4 (approx. per word bound = -7.992, relative change = 1.060e-03) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 5 (approx. per word bound = -7.988, relative change = 5.005e-04) 
 Topic 1: film, br, &lt;, &gt;, movie 
@@ -1200,23 +1195,23 @@ Topic 1: film, br, &lt;, &gt;, movie
  Topic 4: one, br, &lt;, &gt;, show 
  Topic 5: movie, like, one, just, br 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 6 (approx. per word bound = -7.986, relative change = 2.995e-04) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 7 (approx. per word bound = -7.984, relative change = 2.025e-04) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 8 (approx. per word bound = -7.983, relative change = 1.519e-04) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 9 (approx. per word bound = -7.982, relative change = 1.200e-04) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 10 (approx. per word bound = -7.981, relative change = 1.004e-04) 
 Topic 1: film, one, just, like, movie 
@@ -1225,23 +1220,23 @@ Topic 1: film, one, just, like, movie
  Topic 4: one, show, like, good, film 
  Topic 5: movie, like, just, one, good 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 11 (approx. per word bound = -7.981, relative change = 8.937e-05) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 12 (approx. per word bound = -7.980, relative change = 7.748e-05) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 13 (approx. per word bound = -7.979, relative change = 6.546e-05) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 14 (approx. per word bound = -7.979, relative change = 5.645e-05) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 15 (approx. per word bound = -7.979, relative change = 4.526e-05) 
 Topic 1: film, one, just, even, like 
@@ -1250,23 +1245,23 @@ Topic 1: film, one, just, even, like
  Topic 4: one, show, good, like, film 
  Topic 5: movie, like, just, one, good 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 16 (approx. per word bound = -7.978, relative change = 3.836e-05) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 17 (approx. per word bound = -7.978, relative change = 3.395e-05) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 18 (approx. per word bound = -7.978, relative change = 3.022e-05) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 19 (approx. per word bound = -7.978, relative change = 2.789e-05) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 20 (approx. per word bound = -7.977, relative change = 2.811e-05) 
 Topic 1: film, one, just, even, like 
@@ -1275,120 +1270,120 @@ Topic 1: film, one, just, even, like
  Topic 4: one, show, good, best, film 
  Topic 5: movie, like, just, one, good 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 21 (approx. per word bound = -7.977, relative change = 2.682e-05) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 22 (approx. per word bound = -7.977, relative change = 2.724e-05) 
+Completing Iteration 22 (approx. per word bound = -7.977, relative change = 2.725e-05) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 23 (approx. per word bound = -7.977, relative change = 2.685e-05) 
+Completing Iteration 23 (approx. per word bound = -7.977, relative change = 2.684e-05) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 24 (approx. per word bound = -7.977, relative change = 2.833e-05) 
+Completing Iteration 24 (approx. per word bound = -7.977, relative change = 2.810e-05) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 25 (approx. per word bound = -7.976, relative change = 1.984e-05) 
+Completing Iteration 25 (approx. per word bound = -7.976, relative change = 1.986e-05) 
 Topic 1: film, one, just, even, like 
  Topic 2: &gt;, &lt;, br, film, one 
  Topic 3: film, one, story, life, films 
  Topic 4: one, show, good, best, film 
  Topic 5: movie, like, just, one, good 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 26 (approx. per word bound = -7.976, relative change = 1.832e-05) 
+Completing Iteration 26 (approx. per word bound = -7.976, relative change = 1.841e-05) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 27 (approx. per word bound = -7.976, relative change = 1.726e-05) 
+Completing Iteration 27 (approx. per word bound = -7.976, relative change = 1.731e-05) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 28 (approx. per word bound = -7.976, relative change = 1.615e-05) 
+Completing Iteration 28 (approx. per word bound = -7.976, relative change = 1.619e-05) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 29 (approx. per word bound = -7.976, relative change = 1.577e-05) 
+Completing Iteration 29 (approx. per word bound = -7.976, relative change = 1.575e-05) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 30 (approx. per word bound = -7.976, relative change = 1.422e-05) 
+Completing Iteration 30 (approx. per word bound = -7.976, relative change = 1.425e-05) 
 Topic 1: film, one, just, even, bad 
  Topic 2: &gt;, &lt;, br, film, one 
  Topic 3: film, one, story, life, films 
  Topic 4: one, show, good, best, also 
  Topic 5: movie, like, just, one, good 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 31 (approx. per word bound = -7.976, relative change = 1.347e-05) 
+Completing Iteration 31 (approx. per word bound = -7.976, relative change = 1.346e-05) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 32 (approx. per word bound = -7.975, relative change = 1.307e-05) 
+Completing Iteration 32 (approx. per word bound = -7.975, relative change = 1.308e-05) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 33 (approx. per word bound = -7.975, relative change = 1.156e-05) 
+Completing Iteration 33 (approx. per word bound = -7.975, relative change = 1.157e-05) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 34 (approx. per word bound = -7.975, relative change = 1.081e-05) 
+Completing Iteration 34 (approx. per word bound = -7.975, relative change = 1.084e-05) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 35 (approx. per word bound = -7.975, relative change = 1.016e-05) 
+Completing Iteration 35 (approx. per word bound = -7.975, relative change = 1.015e-05) 
 Topic 1: film, one, just, even, bad 
  Topic 2: &gt;, &lt;, br, film, one 
  Topic 3: film, one, story, life, films 
  Topic 4: one, show, good, best, film 
  Topic 5: movie, like, just, one, good 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Model Converged </code></pre>
 </div>
 </div>
 <p>Note what’s significantly different from before is added the <code>prevalence</code> formula. As we discuss in lecture, you can also include variables as <code>content</code> predictors.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb91"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb91-1"><a href="#cb91-1" aria-hidden="true" tabindex="-1"></a><span class="fu">labelTopics</span>(myModel)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb89"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb89-1"><a href="#cb89-1" aria-hidden="true" tabindex="-1"></a><span class="fu">labelTopics</span>(myModel)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Topic 1 Top Words:
      Highest Prob: film, one, just, even, bad, like, horror 
      FREX: slasher, scarecrows, zombie, zombies, kornbluth, scarecrow, seagal 
-     Lift: 2600, addy, amick, antichrist, aranoa, ba, babban 
+     Lift: babban, boogey, dornwinkle, faat, hobbits, kine, langley 
      Score: zombie, slasher, kornbluth, zombies, scarecrows, bad, horror 
 Topic 2 Top Words:
      Highest Prob: &gt;, &lt;, br, film, one, movie, like 
      FREX: &gt;, &lt;, br, zizek, miya, |, aztec 
-     Lift: 1-2, 1-to-10-star, 1.0, 10-minute, 102, 102nd, 11-related 
+     Lift: acre, charis, cody's, franciscus, hardware, kabei, naudet 
      Score: &gt;, &lt;, br, miya, zizek, slugs, oshii 
 Topic 3 Top Words:
      Highest Prob: film, one, story, life, films, also, love 
      FREX: bettie, mathieu, sidney, macarthur, chavez, israel, lumet 
-     Lift: 1918, 1920, 53, adapt, addressing, aishwarya, albniz 
+     Lift: _by, #183, 03, 05, 06, 08, 09 
      Score: film, bettie, mathieu, macarthur, aids, antwone, flamenco 
 Topic 4 Top Words:
      Highest Prob: one, show, best, good, film, also, man 
      FREX: wwe, rochester, triple, kolchak, spock, taker, christy 
-     Lift: 1692, 1931, absurdist, adrien, adversaries, alaric, alekos 
+     Lift: 1931, absurdist, adrien, adversaries, alexis, allen's, annis 
      Score: wwe, taker, bubba, benoit, booker, kolchak, rochester 
 Topic 5 Top Words:
      Highest Prob: movie, like, just, one, good, film, really 
      FREX: movie, movies, watched, liked, kids, funny, loved 
-     Lift: _____, ______, _real_, @ers, @k, 00015, 1,65m 
+     Lift: _____, ______, _real_, _tried, @ers, @k, 00015 
      Score: movie, movies, bad, stupid, like, think, really </code></pre>
 </div>
 </div>
 <p>The topics again look reasonable, and are generally similar to the topics we estimated earlier. We can go a step further by plotting out the top topics (as groups of words associated with that topic) and their estimated frequency across the corpus.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb93"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb93-1"><a href="#cb93-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(myModel, <span class="at">type =</span> <span class="st">"summary"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb91"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb91-1"><a href="#cb91-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(myModel, <span class="at">type =</span> <span class="st">"summary"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -1399,19 +1394,19 @@ Topic 5 Top Words:
 </div>
 <p>One thing we might want to do is to extract the topics and to assign them to the vector of document proportions; this is often useful if we’re using those topic proportions in any sort of downstream analysis, including just a visualization. The following extracts the top words (here, by <code>frex</code>, though you can update that to any of the other three top word sets). Then it iterates through the extracted sets and collapses the strings so the tokens are separated by an underscore; this is useful as a variable name for those downstream analyses.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb94"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb94-1"><a href="#cb94-1" aria-hidden="true" tabindex="-1"></a><span class="co"># get the words</span></span>
-<span id="cb94-2"><a href="#cb94-2" aria-hidden="true" tabindex="-1"></a>myTopicNames <span class="ot">&lt;-</span> <span class="fu">labelTopics</span>(myModel, <span class="at">n=</span><span class="dv">4</span>)<span class="sc">$</span>frex</span>
-<span id="cb94-3"><a href="#cb94-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb94-4"><a href="#cb94-4" aria-hidden="true" tabindex="-1"></a><span class="co"># set up an empty vector</span></span>
-<span id="cb94-5"><a href="#cb94-5" aria-hidden="true" tabindex="-1"></a>myTopicLabels <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="cn">NA</span>, k)</span>
-<span id="cb94-6"><a href="#cb94-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb94-7"><a href="#cb94-7" aria-hidden="true" tabindex="-1"></a><span class="co"># set up a loop to go through the topics and collapse the words to a single name</span></span>
-<span id="cb94-8"><a href="#cb94-8" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>k){</span>
-<span id="cb94-9"><a href="#cb94-9" aria-hidden="true" tabindex="-1"></a>  myTopicLabels[i] <span class="ot">&lt;-</span> <span class="fu">paste</span>(myTopicNames[i,], <span class="at">collapse =</span> <span class="st">"_"</span>)</span>
-<span id="cb94-10"><a href="#cb94-10" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb94-11"><a href="#cb94-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb94-12"><a href="#cb94-12" aria-hidden="true" tabindex="-1"></a><span class="co"># print the names</span></span>
-<span id="cb94-13"><a href="#cb94-13" aria-hidden="true" tabindex="-1"></a>myTopicLabels</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb92"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb92-1"><a href="#cb92-1" aria-hidden="true" tabindex="-1"></a><span class="co"># get the words</span></span>
+<span id="cb92-2"><a href="#cb92-2" aria-hidden="true" tabindex="-1"></a>myTopicNames <span class="ot">&lt;-</span> <span class="fu">labelTopics</span>(myModel, <span class="at">n=</span><span class="dv">4</span>)<span class="sc">$</span>frex</span>
+<span id="cb92-3"><a href="#cb92-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb92-4"><a href="#cb92-4" aria-hidden="true" tabindex="-1"></a><span class="co"># set up an empty vector</span></span>
+<span id="cb92-5"><a href="#cb92-5" aria-hidden="true" tabindex="-1"></a>myTopicLabels <span class="ot">&lt;-</span> <span class="fu">rep</span>(<span class="cn">NA</span>, k)</span>
+<span id="cb92-6"><a href="#cb92-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb92-7"><a href="#cb92-7" aria-hidden="true" tabindex="-1"></a><span class="co"># set up a loop to go through the topics and collapse the words to a single name</span></span>
+<span id="cb92-8"><a href="#cb92-8" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>k){</span>
+<span id="cb92-9"><a href="#cb92-9" aria-hidden="true" tabindex="-1"></a>  myTopicLabels[i] <span class="ot">&lt;-</span> <span class="fu">paste</span>(myTopicNames[i,], <span class="at">collapse =</span> <span class="st">"_"</span>)</span>
+<span id="cb92-10"><a href="#cb92-10" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb92-11"><a href="#cb92-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb92-12"><a href="#cb92-12" aria-hidden="true" tabindex="-1"></a><span class="co"># print the names</span></span>
+<span id="cb92-13"><a href="#cb92-13" aria-hidden="true" tabindex="-1"></a>myTopicLabels</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>[1] "slasher_scarecrows_zombie_zombies" "&gt;_&lt;_br_zizek"                     
 [3] "bettie_mathieu_sidney_macarthur"   "wwe_rochester_triple_kolchak"     
@@ -1424,31 +1419,31 @@ Topic 5 Top Words:
 <p>Recall that we included <code>sentiment</code> as a predictor variable on topical prevalence. We can extract the effect of the predictor here using the <code>estimateEffect()</code> function, which takes as arguments a formula, the stm model object, and the metadata containing the predictor variable.</p>
 <p>Once we’ve run the function, we can plot the estimated effects of <code>sentiment</code> on topic prevalence for each of the estimated topics. With a dichotomous predictor variable, we’ll plot these out solely as the difference (<code>method = "difference"</code>) in topic prevalence across the values of the predictor. Here, our estimate indicates how much more (or less) the topic is discussed when the sentiment of the post is positive.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb96"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb96-1"><a href="#cb96-1" aria-hidden="true" tabindex="-1"></a><span class="co"># estimate effects</span></span>
-<span id="cb96-2"><a href="#cb96-2" aria-hidden="true" tabindex="-1"></a>modelEffects <span class="ot">&lt;-</span> <span class="fu">estimateEffect</span>(<span class="at">formula =</span> <span class="dv">1</span><span class="sc">:</span>k <span class="sc">~</span> sentiment,</span>
-<span id="cb96-3"><a href="#cb96-3" aria-hidden="true" tabindex="-1"></a>                               <span class="at">stmobj =</span> myModel,</span>
-<span id="cb96-4"><a href="#cb96-4" aria-hidden="true" tabindex="-1"></a>                               <span class="at">metadata =</span> movie_review)</span>
-<span id="cb96-5"><a href="#cb96-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb96-6"><a href="#cb96-6" aria-hidden="true" tabindex="-1"></a><span class="co"># plot effects</span></span>
-<span id="cb96-7"><a href="#cb96-7" aria-hidden="true" tabindex="-1"></a>myRows <span class="ot">&lt;-</span> <span class="dv">2</span></span>
-<span id="cb96-8"><a href="#cb96-8" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(myRows, <span class="dv">3</span>), <span class="at">bty =</span> <span class="st">"n"</span>, <span class="at">lwd =</span> <span class="dv">2</span>)</span>
-<span id="cb96-9"><a href="#cb96-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>k){</span>
-<span id="cb96-10"><a href="#cb96-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot.estimateEffect</span>(modelEffects,</span>
-<span id="cb96-11"><a href="#cb96-11" aria-hidden="true" tabindex="-1"></a>                      <span class="at">covariate =</span> <span class="st">"sentiment"</span>,</span>
-<span id="cb96-12"><a href="#cb96-12" aria-hidden="true" tabindex="-1"></a>                      <span class="at">xlim =</span> <span class="fu">c</span>(<span class="sc">-</span>.<span class="dv">25</span>, .<span class="dv">25</span>),</span>
-<span id="cb96-13"><a href="#cb96-13" aria-hidden="true" tabindex="-1"></a>                      <span class="at">model =</span> myModel,</span>
-<span id="cb96-14"><a href="#cb96-14" aria-hidden="true" tabindex="-1"></a>                      <span class="at">topics =</span> modelEffects<span class="sc">$</span>topics[i],</span>
-<span id="cb96-15"><a href="#cb96-15" aria-hidden="true" tabindex="-1"></a>                      <span class="at">method =</span> <span class="st">"difference"</span>,</span>
-<span id="cb96-16"><a href="#cb96-16" aria-hidden="true" tabindex="-1"></a>                      <span class="at">cov.value1 =</span> <span class="dv">1</span>,</span>
-<span id="cb96-17"><a href="#cb96-17" aria-hidden="true" tabindex="-1"></a>                      <span class="at">cov.value2 =</span> <span class="dv">0</span>, </span>
-<span id="cb96-18"><a href="#cb96-18" aria-hidden="true" tabindex="-1"></a>                      <span class="at">main =</span> myTopicLabels[i],</span>
-<span id="cb96-19"><a href="#cb96-19" aria-hidden="true" tabindex="-1"></a>                      <span class="at">printlegend =</span> F,</span>
-<span id="cb96-20"><a href="#cb96-20" aria-hidden="true" tabindex="-1"></a>                      <span class="at">linecol =</span> <span class="st">"grey26"</span>,</span>
-<span id="cb96-21"><a href="#cb96-21" aria-hidden="true" tabindex="-1"></a>                      <span class="at">labeltype =</span> <span class="st">"custom"</span>,</span>
-<span id="cb96-22"><a href="#cb96-22" aria-hidden="true" tabindex="-1"></a>                      <span class="at">verbose.labels =</span> F,</span>
-<span id="cb96-23"><a href="#cb96-23" aria-hidden="true" tabindex="-1"></a>                      <span class="at">custom.labels =</span> <span class="fu">c</span>(<span class="st">""</span>))</span>
-<span id="cb96-24"><a href="#cb96-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">par</span>(<span class="at">new =</span> F)</span>
-<span id="cb96-25"><a href="#cb96-25" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb94"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb94-1"><a href="#cb94-1" aria-hidden="true" tabindex="-1"></a><span class="co"># estimate effects</span></span>
+<span id="cb94-2"><a href="#cb94-2" aria-hidden="true" tabindex="-1"></a>modelEffects <span class="ot">&lt;-</span> <span class="fu">estimateEffect</span>(<span class="at">formula =</span> <span class="dv">1</span><span class="sc">:</span>k <span class="sc">~</span> sentiment,</span>
+<span id="cb94-3"><a href="#cb94-3" aria-hidden="true" tabindex="-1"></a>                               <span class="at">stmobj =</span> myModel,</span>
+<span id="cb94-4"><a href="#cb94-4" aria-hidden="true" tabindex="-1"></a>                               <span class="at">metadata =</span> movie_review)</span>
+<span id="cb94-5"><a href="#cb94-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb94-6"><a href="#cb94-6" aria-hidden="true" tabindex="-1"></a><span class="co"># plot effects</span></span>
+<span id="cb94-7"><a href="#cb94-7" aria-hidden="true" tabindex="-1"></a>myRows <span class="ot">&lt;-</span> <span class="dv">2</span></span>
+<span id="cb94-8"><a href="#cb94-8" aria-hidden="true" tabindex="-1"></a><span class="fu">par</span>(<span class="at">mfrow =</span> <span class="fu">c</span>(myRows, <span class="dv">3</span>), <span class="at">bty =</span> <span class="st">"n"</span>, <span class="at">lwd =</span> <span class="dv">2</span>)</span>
+<span id="cb94-9"><a href="#cb94-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (i <span class="cf">in</span> <span class="dv">1</span><span class="sc">:</span>k){</span>
+<span id="cb94-10"><a href="#cb94-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">plot.estimateEffect</span>(modelEffects,</span>
+<span id="cb94-11"><a href="#cb94-11" aria-hidden="true" tabindex="-1"></a>                      <span class="at">covariate =</span> <span class="st">"sentiment"</span>,</span>
+<span id="cb94-12"><a href="#cb94-12" aria-hidden="true" tabindex="-1"></a>                      <span class="at">xlim =</span> <span class="fu">c</span>(<span class="sc">-</span>.<span class="dv">25</span>, .<span class="dv">25</span>),</span>
+<span id="cb94-13"><a href="#cb94-13" aria-hidden="true" tabindex="-1"></a>                      <span class="at">model =</span> myModel,</span>
+<span id="cb94-14"><a href="#cb94-14" aria-hidden="true" tabindex="-1"></a>                      <span class="at">topics =</span> modelEffects<span class="sc">$</span>topics[i],</span>
+<span id="cb94-15"><a href="#cb94-15" aria-hidden="true" tabindex="-1"></a>                      <span class="at">method =</span> <span class="st">"difference"</span>,</span>
+<span id="cb94-16"><a href="#cb94-16" aria-hidden="true" tabindex="-1"></a>                      <span class="at">cov.value1 =</span> <span class="dv">1</span>,</span>
+<span id="cb94-17"><a href="#cb94-17" aria-hidden="true" tabindex="-1"></a>                      <span class="at">cov.value2 =</span> <span class="dv">0</span>, </span>
+<span id="cb94-18"><a href="#cb94-18" aria-hidden="true" tabindex="-1"></a>                      <span class="at">main =</span> myTopicLabels[i],</span>
+<span id="cb94-19"><a href="#cb94-19" aria-hidden="true" tabindex="-1"></a>                      <span class="at">printlegend =</span> F,</span>
+<span id="cb94-20"><a href="#cb94-20" aria-hidden="true" tabindex="-1"></a>                      <span class="at">linecol =</span> <span class="st">"grey26"</span>,</span>
+<span id="cb94-21"><a href="#cb94-21" aria-hidden="true" tabindex="-1"></a>                      <span class="at">labeltype =</span> <span class="st">"custom"</span>,</span>
+<span id="cb94-22"><a href="#cb94-22" aria-hidden="true" tabindex="-1"></a>                      <span class="at">verbose.labels =</span> F,</span>
+<span id="cb94-23"><a href="#cb94-23" aria-hidden="true" tabindex="-1"></a>                      <span class="at">custom.labels =</span> <span class="fu">c</span>(<span class="st">""</span>))</span>
+<span id="cb94-24"><a href="#cb94-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">par</span>(<span class="at">new =</span> F)</span>
+<span id="cb94-25"><a href="#cb94-25" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -1463,13 +1458,13 @@ Topic 5 Top Words:
 <p>I’m sure you were thinking “How did she select 5 topics?” Well, the answer is that it was just a random number that I selected out of thin air. The choice of the number of topics, typically denoted K, is one of the areas where the design of topic models let’s us as researchers down a bit. While some approaches have been proposed, none have really gained traction. STM includes an approach that we won’t explore based on work by David Mimno that automatically identifies a topic; in reality, it normally results in far more topics than a human would be likely to choose.</p>
 <p>With all that said, there is some functionality included with STM to explore different specifications and to try to at least get some idea of how different approaches perform. <code>searchK()</code> lets you estimate a series of different models, then you can plot a series of different evaluation metrics across those choices.</p>
 <div class="cell">
-<div class="sourceCode cell-code" id="cb97"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb97-1"><a href="#cb97-1" aria-hidden="true" tabindex="-1"></a>differentKs <span class="ot">&lt;-</span> <span class="fu">searchK</span>(myDfm,</span>
-<span id="cb97-2"><a href="#cb97-2" aria-hidden="true" tabindex="-1"></a>                       <span class="at">K =</span> <span class="fu">c</span>(<span class="dv">5</span>, <span class="dv">25</span>, <span class="dv">50</span>),</span>
-<span id="cb97-3"><a href="#cb97-3" aria-hidden="true" tabindex="-1"></a>                       <span class="at">prevalence =</span> <span class="sc">~</span> sentiment,</span>
-<span id="cb97-4"><a href="#cb97-4" aria-hidden="true" tabindex="-1"></a>                       <span class="at">N =</span> <span class="dv">250</span>,</span>
-<span id="cb97-5"><a href="#cb97-5" aria-hidden="true" tabindex="-1"></a>                       <span class="at">data =</span> movie_review,</span>
-<span id="cb97-6"><a href="#cb97-6" aria-hidden="true" tabindex="-1"></a>                       <span class="at">max.em.its =</span> <span class="dv">1000</span>,</span>
-<span id="cb97-7"><a href="#cb97-7" aria-hidden="true" tabindex="-1"></a>                       <span class="at">init.type =</span> <span class="st">"Spectral"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb95"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb95-1"><a href="#cb95-1" aria-hidden="true" tabindex="-1"></a>differentKs <span class="ot">&lt;-</span> <span class="fu">searchK</span>(myDfm,</span>
+<span id="cb95-2"><a href="#cb95-2" aria-hidden="true" tabindex="-1"></a>                       <span class="at">K =</span> <span class="fu">c</span>(<span class="dv">5</span>, <span class="dv">25</span>, <span class="dv">50</span>),</span>
+<span id="cb95-3"><a href="#cb95-3" aria-hidden="true" tabindex="-1"></a>                       <span class="at">prevalence =</span> <span class="sc">~</span> sentiment,</span>
+<span id="cb95-4"><a href="#cb95-4" aria-hidden="true" tabindex="-1"></a>                       <span class="at">N =</span> <span class="dv">250</span>,</span>
+<span id="cb95-5"><a href="#cb95-5" aria-hidden="true" tabindex="-1"></a>                       <span class="at">data =</span> movie_review,</span>
+<span id="cb95-6"><a href="#cb95-6" aria-hidden="true" tabindex="-1"></a>                       <span class="at">max.em.its =</span> <span class="dv">1000</span>,</span>
+<span id="cb95-7"><a href="#cb95-7" aria-hidden="true" tabindex="-1"></a>                       <span class="at">init.type =</span> <span class="st">"Spectral"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
 <pre><code>Beginning Spectral Initialization 
      Calculating the gram matrix...
@@ -1480,23 +1475,23 @@ Topic 5 Top Words:
     ....................................................................................................
 Initialization complete.
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 1 (approx. per word bound = -8.598) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 2 (approx. per word bound = -8.030, relative change = 6.606e-02) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 3 (approx. per word bound = -7.995, relative change = 4.335e-03) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 4 (approx. per word bound = -7.988, relative change = 9.748e-04) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 5 (approx. per word bound = -7.984, relative change = 4.582e-04) 
 Topic 1: &gt;, br, &lt;, film, one 
@@ -1505,23 +1500,23 @@ Topic 1: &gt;, br, &lt;, film, one
  Topic 4: film, &lt;, br, &gt;, one 
  Topic 5: &gt;, br, &lt;, one, show 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 6 (approx. per word bound = -7.982, relative change = 2.807e-04) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 7 (approx. per word bound = -7.980, relative change = 1.973e-04) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 8 (approx. per word bound = -7.979, relative change = 1.478e-04) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 9 (approx. per word bound = -7.978, relative change = 1.109e-04) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 10 (approx. per word bound = -7.977, relative change = 8.100e-05) 
 Topic 1: film, one, like, characters, just 
@@ -1530,23 +1525,23 @@ Topic 1: film, one, like, characters, just
  Topic 4: film, one, &lt;, br, &gt; 
  Topic 5: &gt;, br, &lt;, one, show 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 11 (approx. per word bound = -7.977, relative change = 6.465e-05) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 12 (approx. per word bound = -7.977, relative change = 5.587e-05) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 13 (approx. per word bound = -7.976, relative change = 4.741e-05) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 14 (approx. per word bound = -7.976, relative change = 4.042e-05) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 15 (approx. per word bound = -7.976, relative change = 3.656e-05) 
 Topic 1: film, one, like, characters, just 
@@ -1555,23 +1550,23 @@ Topic 1: film, one, like, characters, just
  Topic 4: film, one, story, &lt;, br 
  Topic 5: &gt;, br, &lt;, one, show 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 16 (approx. per word bound = -7.975, relative change = 3.245e-05) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 17 (approx. per word bound = -7.975, relative change = 2.718e-05) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 18 (approx. per word bound = -7.975, relative change = 2.308e-05) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 19 (approx. per word bound = -7.975, relative change = 2.039e-05) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 20 (approx. per word bound = -7.975, relative change = 1.805e-05) 
 Topic 1: film, one, like, characters, just 
@@ -1580,23 +1575,23 @@ Topic 1: film, one, like, characters, just
  Topic 4: film, one, story, life, also 
  Topic 5: &gt;, br, &lt;, one, show 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 21 (approx. per word bound = -7.974, relative change = 1.768e-05) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 22 (approx. per word bound = -7.974, relative change = 1.726e-05) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 23 (approx. per word bound = -7.974, relative change = 1.614e-05) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 24 (approx. per word bound = -7.974, relative change = 1.481e-05) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 25 (approx. per word bound = -7.974, relative change = 1.389e-05) 
 Topic 1: film, one, like, characters, even 
@@ -1605,15 +1600,15 @@ Topic 1: film, one, like, characters, even
  Topic 4: film, one, story, life, also 
  Topic 5: one, &gt;, br, &lt;, show 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 26 (approx. per word bound = -7.974, relative change = 1.278e-05) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 27 (approx. per word bound = -7.974, relative change = 1.014e-05) 
 ....................................................................................................
-Completed E-Step (1 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Model Converged 
 Beginning Spectral Initialization 
@@ -1625,23 +1620,23 @@ Beginning Spectral Initialization
     ....................................................................................................
 Initialization complete.
 ....................................................................................................
-Completed E-Step (4 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
 Completing Iteration 1 (approx. per word bound = -8.574) 
 ....................................................................................................
-Completed E-Step (4 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 2 (approx. per word bound = -7.788, relative change = 9.173e-02) 
 ....................................................................................................
-Completed E-Step (3 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 3 (approx. per word bound = -7.706, relative change = 1.047e-02) 
 ....................................................................................................
-Completed E-Step (3 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 4 (approx. per word bound = -7.688, relative change = 2.341e-03) 
 ....................................................................................................
-Completed E-Step (3 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 5 (approx. per word bound = -7.681, relative change = 9.745e-04) 
 Topic 1: br, &lt;, &gt;, characters, film 
@@ -1670,25 +1665,25 @@ Topic 1: br, &lt;, &gt;, characters, film
  Topic 24: film, br, &lt;, &gt;, comedy 
  Topic 25: br, &lt;, &gt;, mark, movie 
 ....................................................................................................
-Completed E-Step (3 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 6 (approx. per word bound = -7.676, relative change = 5.703e-04) 
 ....................................................................................................
-Completed E-Step (3 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 7 (approx. per word bound = -7.673, relative change = 4.066e-04) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 8 (approx. per word bound = -7.671, relative change = 3.013e-04) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 9 (approx. per word bound = -7.669, relative change = 2.385e-04) 
+Completing Iteration 9 (approx. per word bound = -7.669, relative change = 2.384e-04) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 10 (approx. per word bound = -7.668, relative change = 1.856e-04) 
+Completing Iteration 10 (approx. per word bound = -7.668, relative change = 1.857e-04) 
 Topic 1: characters, film, like, one, br 
  Topic 2: movie, film, actors, good, one 
  Topic 3: &gt;, &lt;, br, film, one 
@@ -1715,25 +1710,25 @@ Topic 1: characters, film, like, one, br
  Topic 24: film, comedy, good, one, see 
  Topic 25: film, br, &gt;, &lt;, mark 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 11 (approx. per word bound = -7.667, relative change = 1.488e-04) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 12 (approx. per word bound = -7.666, relative change = 1.332e-04) 
+Completing Iteration 12 (approx. per word bound = -7.666, relative change = 1.333e-04) 
 ....................................................................................................
-Completed E-Step (3 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 13 (approx. per word bound = -7.665, relative change = 1.265e-04) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 14 (approx. per word bound = -7.664, relative change = 1.224e-04) 
+Completing Iteration 14 (approx. per word bound = -7.664, relative change = 1.227e-04) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 15 (approx. per word bound = -7.663, relative change = 8.885e-05) 
+Completing Iteration 15 (approx. per word bound = -7.663, relative change = 8.869e-05) 
 Topic 1: characters, film, one, like, script 
  Topic 2: movie, film, actors, good, one 
  Topic 3: &gt;, &lt;, br, film, one 
@@ -1760,25 +1755,25 @@ Topic 1: characters, film, one, like, script
  Topic 24: film, comedy, good, one, see 
  Topic 25: film, mark, &gt;, br, &lt; 
 ....................................................................................................
-Completed E-Step (3 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 16 (approx. per word bound = -7.662, relative change = 6.174e-05) 
+Completing Iteration 16 (approx. per word bound = -7.662, relative change = 6.305e-05) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 17 (approx. per word bound = -7.662, relative change = 5.780e-05) 
+Completing Iteration 17 (approx. per word bound = -7.662, relative change = 5.711e-05) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 18 (approx. per word bound = -7.662, relative change = 4.898e-05) 
+Completing Iteration 18 (approx. per word bound = -7.662, relative change = 4.897e-05) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 19 (approx. per word bound = -7.661, relative change = 3.730e-05) 
+Completing Iteration 19 (approx. per word bound = -7.661, relative change = 3.811e-05) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 20 (approx. per word bound = -7.661, relative change = 3.811e-05) 
+Completing Iteration 20 (approx. per word bound = -7.661, relative change = 3.820e-05) 
 Topic 1: film, characters, one, like, script 
  Topic 2: movie, film, actors, good, one 
  Topic 3: &gt;, &lt;, br, film, one 
@@ -1805,25 +1800,25 @@ Topic 1: film, characters, one, like, script
  Topic 24: film, comedy, good, one, like 
  Topic 25: film, mark, boys, one, movie 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 21 (approx. per word bound = -7.661, relative change = 4.129e-05) 
+Completing Iteration 21 (approx. per word bound = -7.661, relative change = 4.085e-05) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 22 (approx. per word bound = -7.660, relative change = 3.903e-05) 
+Completing Iteration 22 (approx. per word bound = -7.660, relative change = 3.839e-05) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 23 (approx. per word bound = -7.660, relative change = 4.001e-05) 
+Completing Iteration 23 (approx. per word bound = -7.660, relative change = 3.968e-05) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 24 (approx. per word bound = -7.660, relative change = 4.297e-05) 
+Completing Iteration 24 (approx. per word bound = -7.660, relative change = 4.291e-05) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 25 (approx. per word bound = -7.660, relative change = 4.002e-05) 
+Completing Iteration 25 (approx. per word bound = -7.660, relative change = 4.014e-05) 
 Topic 1: film, characters, one, like, script 
  Topic 2: movie, film, actors, good, one 
  Topic 3: &gt;, &lt;, br, film, one 
@@ -1850,25 +1845,25 @@ Topic 1: film, characters, one, like, script
  Topic 24: film, comedy, good, one, like 
  Topic 25: film, mark, boys, one, movie 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 26 (approx. per word bound = -7.659, relative change = 3.646e-05) 
+Completing Iteration 26 (approx. per word bound = -7.659, relative change = 3.644e-05) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 27 (approx. per word bound = -7.659, relative change = 3.469e-05) 
+Completing Iteration 27 (approx. per word bound = -7.659, relative change = 3.453e-05) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 28 (approx. per word bound = -7.659, relative change = 3.399e-05) 
+Completing Iteration 28 (approx. per word bound = -7.659, relative change = 3.416e-05) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 29 (approx. per word bound = -7.658, relative change = 3.070e-05) 
+Completing Iteration 29 (approx. per word bound = -7.658, relative change = 3.058e-05) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 30 (approx. per word bound = -7.658, relative change = 2.761e-05) 
+Completing Iteration 30 (approx. per word bound = -7.658, relative change = 2.744e-05) 
 Topic 1: film, characters, one, like, script 
  Topic 2: movie, film, actors, good, one 
  Topic 3: &gt;, &lt;, br, film, one 
@@ -1895,25 +1890,25 @@ Topic 1: film, characters, one, like, script
  Topic 24: film, comedy, good, one, like 
  Topic 25: film, mark, boys, one, watch 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 31 (approx. per word bound = -7.658, relative change = 2.762e-05) 
+Completing Iteration 31 (approx. per word bound = -7.658, relative change = 2.754e-05) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 32 (approx. per word bound = -7.658, relative change = 2.623e-05) 
+Completing Iteration 32 (approx. per word bound = -7.658, relative change = 2.576e-05) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 33 (approx. per word bound = -7.658, relative change = 2.472e-05) 
+Completing Iteration 33 (approx. per word bound = -7.658, relative change = 2.417e-05) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 34 (approx. per word bound = -7.657, relative change = 2.557e-05) 
+Completing Iteration 34 (approx. per word bound = -7.657, relative change = 2.663e-05) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 35 (approx. per word bound = -7.657, relative change = 2.484e-05) 
+Completing Iteration 35 (approx. per word bound = -7.657, relative change = 2.542e-05) 
 Topic 1: film, characters, one, like, script 
  Topic 2: movie, film, actors, good, one 
  Topic 3: &gt;, &lt;, br, film, one 
@@ -1940,25 +1935,25 @@ Topic 1: film, characters, one, like, script
  Topic 24: film, comedy, good, one, like 
  Topic 25: film, mark, one, boys, watch 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 36 (approx. per word bound = -7.657, relative change = 1.990e-05) 
+Completing Iteration 36 (approx. per word bound = -7.657, relative change = 2.009e-05) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 37 (approx. per word bound = -7.657, relative change = 1.914e-05) 
+Completing Iteration 37 (approx. per word bound = -7.657, relative change = 1.922e-05) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 38 (approx. per word bound = -7.657, relative change = 2.108e-05) 
+Completing Iteration 38 (approx. per word bound = -7.657, relative change = 2.098e-05) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 39 (approx. per word bound = -7.657, relative change = 1.694e-05) 
+Completing Iteration 39 (approx. per word bound = -7.657, relative change = 1.682e-05) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 40 (approx. per word bound = -7.657, relative change = 1.761e-05) 
+Completing Iteration 40 (approx. per word bound = -7.657, relative change = 1.757e-05) 
 Topic 1: film, characters, one, like, script 
  Topic 2: movie, film, actors, good, one 
  Topic 3: &gt;, &lt;, br, film, one 
@@ -1985,26 +1980,71 @@ Topic 1: film, characters, one, like, script
  Topic 24: film, comedy, good, one, like 
  Topic 25: film, mark, one, boys, college 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 41 (approx. per word bound = -7.656, relative change = 1.812e-05) 
+Completing Iteration 41 (approx. per word bound = -7.656, relative change = 1.814e-05) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 42 (approx. per word bound = -7.656, relative change = 2.174e-05) 
+Completing Iteration 42 (approx. per word bound = -7.656, relative change = 2.177e-05) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Completing Iteration 43 (approx. per word bound = -7.656, relative change = 2.054e-05) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 44 (approx. per word bound = -7.656, relative change = 2.242e-05) 
+Completing Iteration 44 (approx. per word bound = -7.656, relative change = 2.231e-05) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 45 (approx. per word bound = -7.656, relative change = 3.411e-05) 
+Completing Iteration 45 (approx. per word bound = -7.656, relative change = 2.355e-05) 
 Topic 1: film, characters, one, like, script 
+ Topic 2: movie, film, actors, good, one 
+ Topic 3: &gt;, &lt;, br, film, one 
+ Topic 4: film, one, story, films, love 
+ Topic 5: show, episode, one, series, best 
+ Topic 6: movie, great, film, one, story 
+ Topic 7: movie, film, good, one, interesting 
+ Topic 8: film, one, also, story, like 
+ Topic 9: film, one, family, first, like 
+ Topic 10: film, just, one, like, even 
+ Topic 11: film, good, one, time, story 
+ Topic 12: film, one, show, life, young 
+ Topic 13: movie, just, like, see, one 
+ Topic 14: film, films, one, movie, like 
+ Topic 15: film, movie, one, like, got 
+ Topic 16: film, one, much, like, even 
+ Topic 17: movie, one, film, just, like 
+ Topic 18: bad, movie, film, one, good 
+ Topic 19: movie, like, show, just, one 
+ Topic 20: film, one, much, movie, like 
+ Topic 21: one, film, match, man, also 
+ Topic 22: one, film, movie, movies, seen 
+ Topic 23: new, one, movie, film, joe 
+ Topic 24: film, comedy, good, one, like 
+ Topic 25: film, mark, one, boys, like 
+....................................................................................................
+Completed E-Step (0 seconds). 
+Completed M-Step. 
+Completing Iteration 46 (approx. per word bound = -7.656, relative change = 1.979e-05) 
+....................................................................................................
+Completed E-Step (0 seconds). 
+Completed M-Step. 
+Completing Iteration 47 (approx. per word bound = -7.655, relative change = 1.826e-05) 
+....................................................................................................
+Completed E-Step (0 seconds). 
+Completed M-Step. 
+Completing Iteration 48 (approx. per word bound = -7.655, relative change = 1.874e-05) 
+....................................................................................................
+Completed E-Step (0 seconds). 
+Completed M-Step. 
+Completing Iteration 49 (approx. per word bound = -7.655, relative change = 2.042e-05) 
+....................................................................................................
+Completed E-Step (0 seconds). 
+Completed M-Step. 
+Completing Iteration 50 (approx. per word bound = -7.655, relative change = 1.782e-05) 
+Topic 1: film, characters, one, like, character 
  Topic 2: movie, film, actors, good, one 
  Topic 3: &gt;, &lt;, br, film, one 
  Topic 4: film, one, story, films, love 
@@ -2030,70 +2070,25 @@ Topic 1: film, characters, one, like, script
  Topic 24: film, comedy, good, one, like 
  Topic 25: film, mark, one, boys, like 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 46 (approx. per word bound = -7.655, relative change = 1.998e-05) 
+Completing Iteration 51 (approx. per word bound = -7.655, relative change = 1.696e-05) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 47 (approx. per word bound = -7.655, relative change = 1.621e-05) 
+Completing Iteration 52 (approx. per word bound = -7.655, relative change = 1.431e-05) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 48 (approx. per word bound = -7.655, relative change = 1.770e-05) 
+Completing Iteration 53 (approx. per word bound = -7.655, relative change = 1.498e-05) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 49 (approx. per word bound = -7.655, relative change = 1.784e-05) 
+Completing Iteration 54 (approx. per word bound = -7.655, relative change = 1.487e-05) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 50 (approx. per word bound = -7.655, relative change = 1.697e-05) 
-Topic 1: film, characters, one, like, character 
- Topic 2: movie, film, actors, good, one 
- Topic 3: &gt;, &lt;, br, film, one 
- Topic 4: film, one, story, films, love 
- Topic 5: show, series, episode, one, best 
- Topic 6: movie, great, film, one, story 
- Topic 7: movie, film, good, one, interesting 
- Topic 8: film, one, also, story, like 
- Topic 9: film, one, family, first, like 
- Topic 10: film, just, one, like, even 
- Topic 11: film, good, one, time, story 
- Topic 12: film, one, show, life, young 
- Topic 13: movie, just, like, see, one 
- Topic 14: film, films, one, movie, like 
- Topic 15: film, movie, one, like, got 
- Topic 16: film, one, much, like, even 
- Topic 17: movie, one, film, just, like 
- Topic 18: bad, movie, film, one, good 
- Topic 19: movie, like, show, just, one 
- Topic 20: film, one, much, movie, like 
- Topic 21: one, film, match, man, also 
- Topic 22: one, film, movie, movies, seen 
- Topic 23: new, one, movie, film, joe 
- Topic 24: film, comedy, good, one, like 
- Topic 25: film, mark, one, boys, like 
-....................................................................................................
-Completed E-Step (2 seconds). 
-Completed M-Step. 
-Completing Iteration 51 (approx. per word bound = -7.655, relative change = 1.602e-05) 
-....................................................................................................
-Completed E-Step (2 seconds). 
-Completed M-Step. 
-Completing Iteration 52 (approx. per word bound = -7.655, relative change = 1.507e-05) 
-....................................................................................................
-Completed E-Step (2 seconds). 
-Completed M-Step. 
-Completing Iteration 53 (approx. per word bound = -7.655, relative change = 1.419e-05) 
-....................................................................................................
-Completed E-Step (2 seconds). 
-Completed M-Step. 
-Completing Iteration 54 (approx. per word bound = -7.655, relative change = 1.434e-05) 
-....................................................................................................
-Completed E-Step (2 seconds). 
-Completed M-Step. 
-Completing Iteration 55 (approx. per word bound = -7.654, relative change = 1.465e-05) 
+Completing Iteration 55 (approx. per word bound = -7.654, relative change = 1.511e-05) 
 Topic 1: film, characters, one, like, character 
  Topic 2: movie, film, actors, good, one 
  Topic 3: &gt;, &lt;, br, film, one 
@@ -2120,25 +2115,25 @@ Topic 1: film, characters, one, like, character
  Topic 24: film, comedy, good, one, like 
  Topic 25: film, mark, one, boys, like 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 56 (approx. per word bound = -7.654, relative change = 1.529e-05) 
+Completing Iteration 56 (approx. per word bound = -7.654, relative change = 1.547e-05) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 57 (approx. per word bound = -7.654, relative change = 1.414e-05) 
+Completing Iteration 57 (approx. per word bound = -7.654, relative change = 1.404e-05) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 58 (approx. per word bound = -7.654, relative change = 1.333e-05) 
+Completing Iteration 58 (approx. per word bound = -7.654, relative change = 1.385e-05) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 59 (approx. per word bound = -7.654, relative change = 1.357e-05) 
+Completing Iteration 59 (approx. per word bound = -7.654, relative change = 1.236e-05) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 60 (approx. per word bound = -7.654, relative change = 1.270e-05) 
+Completing Iteration 60 (approx. per word bound = -7.654, relative change = 1.295e-05) 
 Topic 1: film, characters, one, like, character 
  Topic 2: movie, film, actors, good, one 
  Topic 3: &gt;, &lt;, br, film, one 
@@ -2165,25 +2160,25 @@ Topic 1: film, characters, one, like, character
  Topic 24: film, comedy, good, one, like 
  Topic 25: film, one, mark, like, boys 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 61 (approx. per word bound = -7.654, relative change = 1.258e-05) 
+Completing Iteration 61 (approx. per word bound = -7.654, relative change = 1.368e-05) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 62 (approx. per word bound = -7.654, relative change = 1.380e-05) 
+Completing Iteration 62 (approx. per word bound = -7.654, relative change = 1.398e-05) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 63 (approx. per word bound = -7.654, relative change = 1.242e-05) 
+Completing Iteration 63 (approx. per word bound = -7.654, relative change = 1.247e-05) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 64 (approx. per word bound = -7.653, relative change = 1.124e-05) 
+Completing Iteration 64 (approx. per word bound = -7.653, relative change = 1.143e-05) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 65 (approx. per word bound = -7.653, relative change = 1.030e-05) 
+Completing Iteration 65 (approx. per word bound = -7.653, relative change = 1.104e-05) 
 Topic 1: film, characters, one, like, character 
  Topic 2: movie, film, actors, good, one 
  Topic 3: &gt;, &lt;, br, film, one 
@@ -2210,11 +2205,11 @@ Topic 1: film, characters, one, like, character
  Topic 24: film, comedy, good, one, like 
  Topic 25: film, one, mark, like, boys 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
-Completing Iteration 66 (approx. per word bound = -7.653, relative change = 1.075e-05) 
+Completing Iteration 66 (approx. per word bound = -7.653, relative change = 1.141e-05) 
 ....................................................................................................
-Completed E-Step (2 seconds). 
+Completed E-Step (0 seconds). 
 Completed M-Step. 
 Model Converged 
 Beginning Spectral Initialization 
@@ -2226,23 +2221,23 @@ Beginning Spectral Initialization
     ....................................................................................................
 Initialization complete.
 ....................................................................................................
-Completed E-Step (9 seconds). 
+Completed E-Step (2 seconds). 
 Completed M-Step. 
 Completing Iteration 1 (approx. per word bound = -8.551) 
 ....................................................................................................
-Completed E-Step (7 seconds). 
+Completed E-Step (2 seconds). 
 Completed M-Step. 
 Completing Iteration 2 (approx. per word bound = -7.652, relative change = 1.051e-01) 
 ....................................................................................................
-Completed E-Step (7 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
 Completing Iteration 3 (approx. per word bound = -7.522, relative change = 1.702e-02) 
 ....................................................................................................
-Completed E-Step (6 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
 Completing Iteration 4 (approx. per word bound = -7.486, relative change = 4.819e-03) 
 ....................................................................................................
-Completed E-Step (6 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
 Completing Iteration 5 (approx. per word bound = -7.469, relative change = 2.238e-03) 
 Topic 1: characters, film, br, &lt;, &gt; 
@@ -2296,25 +2291,25 @@ Topic 1: characters, film, br, &lt;, &gt;
  Topic 49: episode, series, show, episodes, season 
  Topic 50: church, movie, joseph, smith, wife 
 ....................................................................................................
-Completed E-Step (6 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
 Completing Iteration 6 (approx. per word bound = -7.460, relative change = 1.234e-03) 
 ....................................................................................................
-Completed E-Step (6 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 7 (approx. per word bound = -7.454, relative change = 7.622e-04) 
+Completing Iteration 7 (approx. per word bound = -7.454, relative change = 7.626e-04) 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 8 (approx. per word bound = -7.450, relative change = 5.127e-04) 
+Completing Iteration 8 (approx. per word bound = -7.450, relative change = 5.129e-04) 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 9 (approx. per word bound = -7.447, relative change = 3.489e-04) 
+Completing Iteration 9 (approx. per word bound = -7.447, relative change = 3.493e-04) 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 10 (approx. per word bound = -7.446, relative change = 2.530e-04) 
+Completing Iteration 10 (approx. per word bound = -7.446, relative change = 2.526e-04) 
 Topic 1: characters, film, script, character, even 
  Topic 2: movie, director, actors, disappointed, film 
  Topic 3: &gt;, &lt;, br, film, one 
@@ -2366,25 +2361,25 @@ Topic 1: characters, film, script, character, even
  Topic 49: episode, series, show, episodes, season 
  Topic 50: church, smith, movie, joseph, lds 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 11 (approx. per word bound = -7.444, relative change = 1.942e-04) 
+Completing Iteration 11 (approx. per word bound = -7.444, relative change = 1.933e-04) 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 12 (approx. per word bound = -7.443, relative change = 1.550e-04) 
+Completing Iteration 12 (approx. per word bound = -7.443, relative change = 1.565e-04) 
 ....................................................................................................
-Completed E-Step (6 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 13 (approx. per word bound = -7.442, relative change = 1.307e-04) 
+Completing Iteration 13 (approx. per word bound = -7.442, relative change = 1.289e-04) 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 14 (approx. per word bound = -7.441, relative change = 1.050e-04) 
+Completing Iteration 14 (approx. per word bound = -7.441, relative change = 1.056e-04) 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 15 (approx. per word bound = -7.441, relative change = 9.156e-05) 
+Completing Iteration 15 (approx. per word bound = -7.441, relative change = 9.111e-05) 
 Topic 1: characters, film, script, character, even 
  Topic 2: movie, film, director, disappointed, actors 
  Topic 3: &gt;, &lt;, br, film, one 
@@ -2397,7 +2392,7 @@ Topic 1: characters, film, script, character, even
  Topic 10: just, film, like, one, even 
  Topic 11: good, time, film, one, actually 
  Topic 12: film, one, life, old, br 
- Topic 13: movie, see, just, bad, like 
+ Topic 13: movie, just, see, bad, like 
  Topic 14: &gt;, br, &lt;, film, films 
  Topic 15: film, one, like, never, even 
  Topic 16: film, 2, one, much, like 
@@ -2436,25 +2431,25 @@ Topic 1: characters, film, script, character, even
  Topic 49: episode, series, show, episodes, season 
  Topic 50: church, movie, smith, joseph, lds 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 16 (approx. per word bound = -7.440, relative change = 8.058e-05) 
+Completing Iteration 16 (approx. per word bound = -7.440, relative change = 8.102e-05) 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 17 (approx. per word bound = -7.439, relative change = 7.160e-05) 
+Completing Iteration 17 (approx. per word bound = -7.439, relative change = 7.130e-05) 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 18 (approx. per word bound = -7.439, relative change = 7.070e-05) 
+Completing Iteration 18 (approx. per word bound = -7.439, relative change = 6.997e-05) 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 19 (approx. per word bound = -7.438, relative change = 6.957e-05) 
+Completing Iteration 19 (approx. per word bound = -7.438, relative change = 7.023e-05) 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 20 (approx. per word bound = -7.438, relative change = 6.370e-05) 
+Completing Iteration 20 (approx. per word bound = -7.438, relative change = 6.239e-05) 
 Topic 1: characters, film, script, character, even 
  Topic 2: movie, film, director, actors, disappointed 
  Topic 3: &gt;, &lt;, br, film, one 
@@ -2506,25 +2501,25 @@ Topic 1: characters, film, script, character, even
  Topic 49: episode, series, show, episodes, season 
  Topic 50: church, movie, smith, joseph, film 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 21 (approx. per word bound = -7.437, relative change = 5.772e-05) 
+Completing Iteration 21 (approx. per word bound = -7.437, relative change = 5.853e-05) 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 22 (approx. per word bound = -7.437, relative change = 4.588e-05) 
+Completing Iteration 22 (approx. per word bound = -7.437, relative change = 4.699e-05) 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 23 (approx. per word bound = -7.437, relative change = 4.576e-05) 
+Completing Iteration 23 (approx. per word bound = -7.437, relative change = 4.665e-05) 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 24 (approx. per word bound = -7.436, relative change = 4.364e-05) 
+Completing Iteration 24 (approx. per word bound = -7.436, relative change = 4.253e-05) 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 25 (approx. per word bound = -7.436, relative change = 3.793e-05) 
+Completing Iteration 25 (approx. per word bound = -7.436, relative change = 3.670e-05) 
 Topic 1: characters, film, script, character, even 
  Topic 2: movie, film, director, actors, one 
  Topic 3: &gt;, &lt;, br, film, one 
@@ -2544,7 +2539,7 @@ Topic 1: characters, film, script, character, even
  Topic 17: movie, one, film, just, school 
  Topic 18: bad, movie, get, one, good 
  Topic 19: movie, like, tv, just, lot 
- Topic 20: much, movie, film, one, like 
+ Topic 20: much, film, movie, one, like 
  Topic 21: match, one, rock, wwe, ring 
  Topic 22: one, movies, movie, film, seen 
  Topic 23: new, one, joe, film, time 
@@ -2557,7 +2552,7 @@ Topic 1: characters, film, script, character, even
  Topic 30: film, films, one, best, great 
  Topic 31: one, like, movie, film, people 
  Topic 32: film, horror, films, one, just 
- Topic 33: people, documentary, film, &lt;, like 
+ Topic 33: people, documentary, &lt;, film, like 
  Topic 34: movie, really, like, just, good 
  Topic 35: like, film, one, &gt;, br 
  Topic 36: film, one, good, bad, pretty 
@@ -2576,25 +2571,25 @@ Topic 1: characters, film, script, character, even
  Topic 49: episode, series, show, episodes, season 
  Topic 50: church, movie, smith, joseph, film 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 26 (approx. per word bound = -7.436, relative change = 3.347e-05) 
+Completing Iteration 26 (approx. per word bound = -7.436, relative change = 3.519e-05) 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 27 (approx. per word bound = -7.436, relative change = 2.909e-05) 
+Completing Iteration 27 (approx. per word bound = -7.436, relative change = 2.901e-05) 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 28 (approx. per word bound = -7.436, relative change = 2.210e-05) 
+Completing Iteration 28 (approx. per word bound = -7.435, relative change = 2.512e-05) 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 29 (approx. per word bound = -7.435, relative change = 2.580e-05) 
+Completing Iteration 29 (approx. per word bound = -7.435, relative change = 2.438e-05) 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 30 (approx. per word bound = -7.435, relative change = 2.434e-05) 
+Completing Iteration 30 (approx. per word bound = -7.435, relative change = 2.165e-05) 
 Topic 1: characters, film, script, character, even 
  Topic 2: movie, film, director, actors, one 
  Topic 3: &gt;, &lt;, br, film, one 
@@ -2607,7 +2602,7 @@ Topic 1: characters, film, script, character, even
  Topic 10: film, just, like, one, even 
  Topic 11: good, time, film, one, actually 
  Topic 12: film, one, life, old, man 
- Topic 13: movie, bad, see, just, people 
+ Topic 13: movie, bad, just, see, people 
  Topic 14: film, films, lost, like, one 
  Topic 15: film, one, never, even, like 
  Topic 16: film, 2, one, much, even 
@@ -2646,25 +2641,25 @@ Topic 1: characters, film, script, character, even
  Topic 49: episode, series, show, episodes, season 
  Topic 50: church, movie, smith, joseph, film 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 31 (approx. per word bound = -7.435, relative change = 2.752e-05) 
+Completing Iteration 31 (approx. per word bound = -7.435, relative change = 2.934e-05) 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 32 (approx. per word bound = -7.435, relative change = 2.951e-05) 
+Completing Iteration 32 (approx. per word bound = -7.435, relative change = 2.879e-05) 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 33 (approx. per word bound = -7.435, relative change = 2.276e-05) 
+Completing Iteration 33 (approx. per word bound = -7.435, relative change = 2.394e-05) 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 34 (approx. per word bound = -7.434, relative change = 2.120e-05) 
+Completing Iteration 34 (approx. per word bound = -7.434, relative change = 2.239e-05) 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 35 (approx. per word bound = -7.434, relative change = 2.347e-05) 
+Completing Iteration 35 (approx. per word bound = -7.434, relative change = 2.384e-05) 
 Topic 1: characters, film, script, character, even 
  Topic 2: movie, film, director, actors, one 
  Topic 3: &gt;, &lt;, br, film, one 
@@ -2688,7 +2683,7 @@ Topic 1: characters, film, script, character, even
  Topic 21: match, one, rock, wwe, ring 
  Topic 22: one, movies, movie, film, seen 
  Topic 23: new, one, joe, film, time 
- Topic 24: film, comedy, good, cast, story 
+ Topic 24: film, comedy, good, cast, also 
  Topic 25: movie, love, film, s, one 
  Topic 26: &gt;, &lt;, br, movie, now 
  Topic 27: film, time, just, one, first 
@@ -2716,25 +2711,25 @@ Topic 1: characters, film, script, character, even
  Topic 49: episode, series, show, episodes, season 
  Topic 50: church, movie, smith, joseph, film 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 36 (approx. per word bound = -7.434, relative change = 2.298e-05) 
+Completing Iteration 36 (approx. per word bound = -7.434, relative change = 2.580e-05) 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 37 (approx. per word bound = -7.434, relative change = 2.441e-05) 
+Completing Iteration 37 (approx. per word bound = -7.434, relative change = 1.860e-05) 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 38 (approx. per word bound = -7.434, relative change = 2.119e-05) 
+Completing Iteration 38 (approx. per word bound = -7.434, relative change = 2.488e-05) 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 39 (approx. per word bound = -7.434, relative change = 1.905e-05) 
+Completing Iteration 39 (approx. per word bound = -7.434, relative change = 1.850e-05) 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 40 (approx. per word bound = -7.433, relative change = 1.407e-05) 
+Completing Iteration 40 (approx. per word bound = -7.433, relative change = 1.414e-05) 
 Topic 1: characters, film, script, character, even 
  Topic 2: movie, film, director, actors, one 
  Topic 3: &gt;, &lt;, br, film, just 
@@ -2781,34 +2776,34 @@ Topic 1: characters, film, script, character, even
  Topic 44: film, one, heart, story, play 
  Topic 45: film, br, &lt;, &gt;, one 
  Topic 46: life, movie, br, &gt;, &lt; 
- Topic 47: film, one, many, also, war 
+ Topic 47: film, one, many, also, man 
  Topic 48: film, one, like, hero, films 
  Topic 49: episode, series, show, episodes, season 
  Topic 50: church, movie, smith, joseph, god 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 41 (approx. per word bound = -7.433, relative change = 1.954e-05) 
+Completing Iteration 41 (approx. per word bound = -7.433, relative change = 1.709e-05) 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 42 (approx. per word bound = -7.433, relative change = 1.752e-05) 
+Completing Iteration 42 (approx. per word bound = -7.433, relative change = 2.418e-05) 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 43 (approx. per word bound = -7.433, relative change = 2.002e-05) 
+Completing Iteration 43 (approx. per word bound = -7.433, relative change = 2.174e-05) 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 44 (approx. per word bound = -7.433, relative change = 2.428e-05) 
+Completing Iteration 44 (approx. per word bound = -7.433, relative change = 2.002e-05) 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 45 (approx. per word bound = -7.433, relative change = 1.768e-05) 
+Completing Iteration 45 (approx. per word bound = -7.433, relative change = 2.107e-05) 
 Topic 1: characters, film, script, character, even 
  Topic 2: movie, film, director, actors, one 
  Topic 3: &gt;, &lt;, br, film, just 
- Topic 4: film, one, excellent, woman, makes 
+ Topic 4: film, one, excellent, makes, woman 
  Topic 5: character, best, film, one, well 
  Topic 6: movie, great, film, one, also 
  Topic 7: film, movie, good, interesting, one 
@@ -2856,27 +2851,151 @@ Topic 1: characters, film, script, character, even
  Topic 49: episode, series, show, episodes, season 
  Topic 50: church, movie, smith, joseph, god 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 46 (approx. per word bound = -7.433, relative change = 2.570e-05) 
+Completing Iteration 46 (approx. per word bound = -7.433, relative change = 2.186e-05) 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 47 (approx. per word bound = -7.432, relative change = 1.889e-05) 
+Completing Iteration 47 (approx. per word bound = -7.432, relative change = 1.884e-05) 
 ....................................................................................................
-Completed E-Step (6 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 48 (approx. per word bound = -7.432, relative change = 1.374e-05) 
+Completing Iteration 48 (approx. per word bound = -7.432, relative change = 1.022e-05) 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
 Completed M-Step. 
-Completing Iteration 49 (approx. per word bound = -7.432, relative change = 1.427e-05) 
+Completing Iteration 49 (approx. per word bound = -7.432, relative change = 1.816e-05) 
 ....................................................................................................
-Completed E-Step (5 seconds). 
+Completed E-Step (1 seconds). 
+Completed M-Step. 
+Completing Iteration 50 (approx. per word bound = -7.432, relative change = 1.276e-05) 
+Topic 1: characters, film, script, character, even 
+ Topic 2: movie, film, director, actors, one 
+ Topic 3: &gt;, &lt;, br, film, well 
+ Topic 4: film, one, excellent, woman, makes 
+ Topic 5: character, best, film, one, well 
+ Topic 6: movie, great, film, one, also 
+ Topic 7: film, movie, good, interesting, one 
+ Topic 8: film, one, also, plot, think 
+ Topic 9: film, family, one, love, story 
+ Topic 10: film, just, like, one, even 
+ Topic 11: time, good, film, one, actually 
+ Topic 12: film, one, life, old, man 
+ Topic 13: movie, bad, just, see, even 
+ Topic 14: film, films, lost, like, one 
+ Topic 15: film, one, never, even, like 
+ Topic 16: film, 2, one, much, even 
+ Topic 17: movie, one, film, school, just 
+ Topic 18: bad, movie, get, one, even 
+ Topic 19: movie, like, tv, just, lot 
+ Topic 20: much, film, one, movie, like 
+ Topic 21: match, one, rock, wwe, ring 
+ Topic 22: one, movies, movie, film, seen 
+ Topic 23: new, one, joe, film, time 
+ Topic 24: film, comedy, good, cast, also 
+ Topic 25: movie, love, film, s, ` 
+ Topic 26: movie, &gt;, &lt;, br, now 
+ Topic 27: film, time, just, one, first 
+ Topic 28: one, film, comedy, funny, humor 
+ Topic 29: show, good, also, see, one 
+ Topic 30: film, films, one, best, great 
+ Topic 31: one, like, movie, film, people 
+ Topic 32: film, horror, films, one, just 
+ Topic 33: people, documentary, film, like, one 
+ Topic 34: movie, like, really, just, good 
+ Topic 35: like, film, one, just, game 
+ Topic 36: film, one, bad, good, pretty 
+ Topic 37: book, novel, film, read, movie 
+ Topic 38: movie, film, director, actors, first 
+ Topic 39: show, one, like, really, just 
+ Topic 40: film, like, show, one, even 
+ Topic 41: film, story, one, role, beautiful 
+ Topic 42: film, one, get, real, just 
+ Topic 43: one, film, movie, just, david 
+ Topic 44: film, one, heart, story, play 
+ Topic 45: film, one, br, &lt;, &gt; 
+ Topic 46: life, movie, film, japanese, one 
+ Topic 47: film, one, many, also, man 
+ Topic 48: film, one, like, hero, films 
+ Topic 49: episode, series, show, episodes, season 
+ Topic 50: church, movie, god, smith, joseph 
+....................................................................................................
+Completed E-Step (1 seconds). 
+Completed M-Step. 
+Completing Iteration 51 (approx. per word bound = -7.432, relative change = 1.022e-05) 
+....................................................................................................
+Completed E-Step (1 seconds). 
+Completed M-Step. 
+Completing Iteration 52 (approx. per word bound = -7.432, relative change = 1.068e-05) 
+....................................................................................................
+Completed E-Step (1 seconds). 
+Completed M-Step. 
+Completing Iteration 53 (approx. per word bound = -7.432, relative change = 1.336e-05) 
+....................................................................................................
+Completed E-Step (1 seconds). 
+Completed M-Step. 
+Completing Iteration 54 (approx. per word bound = -7.432, relative change = 1.355e-05) 
+....................................................................................................
+Completed E-Step (1 seconds). 
+Completed M-Step. 
+Completing Iteration 55 (approx. per word bound = -7.432, relative change = 1.218e-05) 
+Topic 1: characters, film, script, character, even 
+ Topic 2: movie, film, director, actors, one 
+ Topic 3: &gt;, &lt;, br, film, well 
+ Topic 4: film, one, excellent, woman, makes 
+ Topic 5: character, best, film, one, well 
+ Topic 6: movie, great, film, one, also 
+ Topic 7: film, movie, good, interesting, one 
+ Topic 8: film, one, also, plot, think 
+ Topic 9: film, family, one, love, story 
+ Topic 10: film, just, like, one, even 
+ Topic 11: time, good, film, one, actually 
+ Topic 12: film, one, life, old, man 
+ Topic 13: movie, bad, just, see, even 
+ Topic 14: film, films, lost, like, one 
+ Topic 15: film, one, never, even, like 
+ Topic 16: film, 2, one, much, even 
+ Topic 17: movie, one, film, school, just 
+ Topic 18: bad, movie, get, one, even 
+ Topic 19: movie, like, tv, lot, just 
+ Topic 20: much, film, one, movie, like 
+ Topic 21: match, one, rock, wwe, ring 
+ Topic 22: one, movies, movie, film, seen 
+ Topic 23: new, one, joe, film, time 
+ Topic 24: film, comedy, cast, good, also 
+ Topic 25: movie, love, film, s, ` 
+ Topic 26: movie, now, &gt;, &lt;, br 
+ Topic 27: film, time, just, one, first 
+ Topic 28: one, film, comedy, funny, humor 
+ Topic 29: show, good, also, see, one 
+ Topic 30: film, films, one, best, great 
+ Topic 31: one, like, movie, film, people 
+ Topic 32: film, horror, films, one, even 
+ Topic 33: people, documentary, film, like, one 
+ Topic 34: movie, like, really, just, good 
+ Topic 35: like, film, one, just, game 
+ Topic 36: film, one, bad, good, pretty 
+ Topic 37: book, novel, film, read, movie 
+ Topic 38: movie, film, director, actors, first 
+ Topic 39: show, one, like, really, just 
+ Topic 40: film, like, show, one, even 
+ Topic 41: film, story, one, role, beautiful 
+ Topic 42: film, one, get, real, just 
+ Topic 43: one, film, just, movie, david 
+ Topic 44: film, one, heart, story, play 
+ Topic 45: film, one, br, &lt;, &gt; 
+ Topic 46: life, movie, film, japanese, one 
+ Topic 47: film, one, many, also, man 
+ Topic 48: film, one, like, hero, films 
+ Topic 49: episode, series, show, episodes, season 
+ Topic 50: movie, church, god, smith, joseph 
+....................................................................................................
+Completed E-Step (1 seconds). 
 Completed M-Step. 
 Model Converged </code></pre>
 </div>
-<div class="sourceCode cell-code" id="cb99"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb99-1"><a href="#cb99-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(differentKs)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode cell-code" id="cb97"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb97-1"><a href="#cb97-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(differentKs)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output-display">
 <div>
 <figure class="figure">
@@ -2894,239 +3013,242 @@ Model Converged </code></pre>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
-window.document.addEventListener("DOMContentLoaded", function (event) {
-  const toggleBodyColorMode = (bsSheetEl) => {
-    const mode = bsSheetEl.getAttribute("data-mode");
-    const bodyEl = window.document.querySelector("body");
-    if (mode === "dark") {
-      bodyEl.classList.add("quarto-dark");
-      bodyEl.classList.remove("quarto-light");
-    } else {
-      bodyEl.classList.add("quarto-light");
-      bodyEl.classList.remove("quarto-dark");
-    }
-  }
-  const toggleBodyColorPrimary = () => {
-    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-    if (bsSheetEl) {
-      toggleBodyColorMode(bsSheetEl);
-    }
-  }
-  toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
-  const isCodeAnnotation = (el) => {
-    for (const clz of el.classList) {
-      if (clz.startsWith('code-annotation-')) {                     
-        return true;
-      }
-    }
-    return false;
-  }
-  const onCopySuccess = function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
-      }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  }
-  const getTextToCopy = function(trigger) {
-      const codeEl = trigger.previousElementSibling.cloneNode(true);
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
-        }
-      }
-      return codeEl.innerText;
-  }
-  const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
-    text: getTextToCopy
-  });
-  clipboard.on('success', onCopySuccess);
-  if (window.document.getElementById('quarto-embedded-source-code-modal')) {
-    // For code content inside modals, clipBoardJS needs to be initialized with a container option
-    // TODO: Check when it could be a function (https://github.com/zenorocha/clipboard.js/issues/860)
-    const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
-      text: getTextToCopy,
-      container: window.document.getElementById('quarto-embedded-source-code-modal')
-    });
-    clipboardModal.on('success', onCopySuccess);
-  }
-    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
-    var mailtoRegex = new RegExp(/^mailto:/);
-      var filterRegex = new RegExp('/' + window.location.host + '/');
-    var isInternal = (href) => {
-        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
-    }
-    // Inspect non-navigation links and adorn them if external
- 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
-    for (var i=0; i<links.length; i++) {
-      const link = links[i];
-      if (!isInternal(link.href)) {
-        // undo the damage that might have been done by quarto-nav.js in the case of
-        // links that we want to consider external
-        if (link.dataset.originalHref !== undefined) {
-          link.href = link.dataset.originalHref;
-        }
-      }
-    }
-  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
-    const config = {
-      allowHTML: true,
-      maxWidth: 500,
-      delay: 100,
-      arrow: false,
-      appendTo: function(el) {
-          return el.parentElement;
-      },
-      interactive: true,
-      interactiveBorder: 10,
-      theme: 'quarto',
-      placement: 'bottom-start',
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
     };
-    if (contentFn) {
-      config.content = contentFn;
-    }
-    if (onTriggerFn) {
-      config.onTrigger = onTriggerFn;
-    }
-    if (onUntriggerFn) {
-      config.onUntrigger = onUntriggerFn;
-    }
-    window.tippy(el, config); 
-  }
-  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-  for (var i=0; i<noterefs.length; i++) {
-    const ref = noterefs[i];
-    tippyHover(ref, function() {
-      // use id or data attribute instead here
-      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-      try { href = new URL(href).hash; } catch {}
-      const id = href.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      if (note) {
-        return note.innerHTML;
-      } else {
-        return "";
-      }
-    });
-  }
-  const xrefs = window.document.querySelectorAll('a.quarto-xref');
-  const processXRef = (id, note) => {
-    // Strip column container classes
-    const stripColumnClz = (el) => {
-      el.classList.remove("page-full", "page-columns");
-      if (el.children) {
-        for (const child of el.children) {
-          stripColumnClz(child);
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
         }
       }
+      return false;
     }
-    stripColumnClz(note)
-    if (id === null || id.startsWith('sec-')) {
-      // Special case sections, only their first couple elements
-      const container = document.createElement("div");
-      if (note.children && note.children.length > 2) {
-        container.appendChild(note.children[0].cloneNode(true));
-        for (let i = 1; i < note.children.length; i++) {
-          const child = note.children[i];
-          if (child.tagName === "P" && child.innerText === "") {
-            continue;
-          } else {
-            container.appendChild(child.cloneNode(true));
-            break;
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
           }
         }
-        if (window.Quarto?.typesetMath) {
-          window.Quarto.typesetMath(container);
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
         }
-        return container.innerHTML
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
       } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
         if (window.Quarto?.typesetMath) {
           window.Quarto.typesetMath(note);
         }
-        return note.innerHTML;
-      }
-    } else {
-      // Remove any anchor links if they are present
-      const anchorLink = note.querySelector('a.anchorjs-link');
-      if (anchorLink) {
-        anchorLink.remove();
-      }
-      if (window.Quarto?.typesetMath) {
-        window.Quarto.typesetMath(note);
-      }
-      // TODO in 1.5, we should make sure this works without a callout special case
-      if (note.classList.contains("callout")) {
-        return note.outerHTML;
-      } else {
-        return note.innerHTML;
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
       }
     }
-  }
-  for (var i=0; i<xrefs.length; i++) {
-    const xref = xrefs[i];
-    tippyHover(xref, undefined, function(instance) {
-      instance.disable();
-      let url = xref.getAttribute('href');
-      let hash = undefined; 
-      if (url.startsWith('#')) {
-        hash = url;
-      } else {
-        try { hash = new URL(url).hash; } catch {}
-      }
-      if (hash) {
-        const id = hash.replace(/^#\/?/, "");
-        const note = window.document.getElementById(id);
-        if (note !== null) {
-          try {
-            const html = processXRef(id, note.cloneNode(true));
-            instance.setContent(html);
-          } finally {
-            instance.enable();
-            instance.show();
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
           }
         } else {
-          // See if we can fetch this
-          fetch(url.split('#')[0])
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
           .then(res => res.text())
           .then(html => {
             const parser = new DOMParser();
             const htmlDoc = parser.parseFromString(html, "text/html");
-            const note = htmlDoc.getElementById(id);
+            const note = htmlDoc.querySelector('main.content');
             if (note !== null) {
-              const html = processXRef(id, note);
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
               instance.setContent(html);
             } 
           }).finally(() => {
@@ -3134,185 +3256,161 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             instance.show();
           });
         }
-      } else {
-        // See if we can fetch a full url (with no hash to target)
-        // This is a special case and we should probably do some content thinning / targeting
-        fetch(url)
-        .then(res => res.text())
-        .then(html => {
-          const parser = new DOMParser();
-          const htmlDoc = parser.parseFromString(html, "text/html");
-          const note = htmlDoc.querySelector('main.content');
-          if (note !== null) {
-            // This should only happen for chapter cross references
-            // (since there is no id in the URL)
-            // remove the first header
-            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
-              note.children[0].remove();
-            }
-            const html = processXRef(null, note);
-            instance.setContent(html);
-          } 
-        }).finally(() => {
-          instance.enable();
-          instance.show();
-        });
-      }
-    }, function(instance) {
-    });
-  }
-      let selectedAnnoteEl;
-      const selectorForAnnotation = ( cell, annotation) => {
-        let cellAttr = 'data-code-cell="' + cell + '"';
-        let lineAttr = 'data-code-annotation="' +  annotation + '"';
-        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
-        return selector;
-      }
-      const selectCodeLines = (annoteEl) => {
-        const doc = window.document;
-        const targetCell = annoteEl.getAttribute("data-target-cell");
-        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
-        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
-        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
-        const lineIds = lines.map((line) => {
-          return targetCell + "-" + line;
-        })
-        let top = null;
-        let height = null;
-        let parent = null;
-        if (lineIds.length > 0) {
-            //compute the position of the single el (top and bottom and make a div)
-            const el = window.document.getElementById(lineIds[0]);
-            top = el.offsetTop;
-            height = el.offsetHeight;
-            parent = el.parentElement.parentElement;
-          if (lineIds.length > 1) {
-            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
-            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
-            height = bottom - top;
-          }
-          if (top !== null && height !== null && parent !== null) {
-            // cook up a div (if necessary) and position it 
-            let div = window.document.getElementById("code-annotation-line-highlight");
-            if (div === null) {
-              div = window.document.createElement("div");
-              div.setAttribute("id", "code-annotation-line-highlight");
-              div.style.position = 'absolute';
-              parent.appendChild(div);
-            }
-            div.style.top = top - 2 + "px";
-            div.style.height = height + 4 + "px";
-            div.style.left = 0;
-            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
-            if (gutterDiv === null) {
-              gutterDiv = window.document.createElement("div");
-              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
-              gutterDiv.style.position = 'absolute';
-              const codeCell = window.document.getElementById(targetCell);
-              const gutter = codeCell.querySelector('.code-annotation-gutter');
-              gutter.appendChild(gutterDiv);
-            }
-            gutterDiv.style.top = top - 2 + "px";
-            gutterDiv.style.height = height + 4 + "px";
-          }
-          selectedAnnoteEl = annoteEl;
-        }
-      };
-      const unselectCodeLines = () => {
-        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
-        elementsIds.forEach((elId) => {
-          const div = window.document.getElementById(elId);
-          if (div) {
-            div.remove();
-          }
-        });
-        selectedAnnoteEl = undefined;
-      };
-        // Handle positioning of the toggle
-    window.addEventListener(
-      "resize",
-      throttle(() => {
-        elRect = undefined;
-        if (selectedAnnoteEl) {
-          selectCodeLines(selectedAnnoteEl);
-        }
-      }, 10)
-    );
-    function throttle(fn, ms) {
-    let throttle = false;
-    let timer;
-      return (...args) => {
-        if(!throttle) { // first call gets through
-            fn.apply(this, args);
-            throttle = true;
-        } else { // all the others get throttled
-            if(timer) clearTimeout(timer); // cancel #2
-            timer = setTimeout(() => {
-              fn.apply(this, args);
-              timer = throttle = false;
-            }, ms);
-        }
-      };
-    }
-      // Attach click handler to the DT
-      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
-      for (const annoteDlNode of annoteDls) {
-        annoteDlNode.addEventListener('click', (event) => {
-          const clickedEl = event.target;
-          if (clickedEl !== selectedAnnoteEl) {
-            unselectCodeLines();
-            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
-            if (activeEl) {
-              activeEl.classList.remove('code-annotation-active');
-            }
-            selectCodeLines(clickedEl);
-            clickedEl.classList.add('code-annotation-active');
-          } else {
-            // Unselect the line
-            unselectCodeLines();
-            clickedEl.classList.remove('code-annotation-active');
-          }
-        });
-      }
-  const findCites = (el) => {
-    const parentEl = el.parentElement;
-    if (parentEl) {
-      const cites = parentEl.dataset.cites;
-      if (cites) {
-        return {
-          el,
-          cites: cites.split(' ')
-        };
-      } else {
-        return findCites(el.parentElement)
-      }
-    } else {
-      return undefined;
-    }
-  };
-  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-  for (var i=0; i<bibliorefs.length; i++) {
-    const ref = bibliorefs[i];
-    const citeInfo = findCites(ref);
-    if (citeInfo) {
-      tippyHover(citeInfo.el, function() {
-        var popup = window.document.createElement('div');
-        citeInfo.cites.forEach(function(cite) {
-          var citeDiv = window.document.createElement('div');
-          citeDiv.classList.add('hanging-indent');
-          citeDiv.classList.add('csl-entry');
-          var biblioDiv = window.document.getElementById('ref-' + cite);
-          if (biblioDiv) {
-            citeDiv.innerHTML = biblioDiv.innerHTML;
-          }
-          popup.appendChild(citeDiv);
-        });
-        return popup.innerHTML;
+      }, function(instance) {
       });
     }
-  }
-});
-</script>
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
 </div> <!-- /content -->
 
 
