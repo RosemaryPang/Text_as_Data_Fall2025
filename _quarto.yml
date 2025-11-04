@@ -26,8 +26,8 @@ website:
         text: Tutorial8 
       - href: Tutorial9.qmd
         text: Tutorial9 
-#      - href: Tutorial10.qmd
-#        text: Tutorial10 
+      - href: Tutorial10.qmd
+        text: Tutorial10 
         
 format:
   html:
